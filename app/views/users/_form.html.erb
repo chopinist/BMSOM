@@ -1,0 +1,46 @@
+<div class="form-group">
+  <%= f.label(:first_name,t("user.first_name")) %>
+  <%= f.text_field(:first_name, :class => "form-control radius") %>
+</div>
+
+<div class="form-group">
+  <%= f.label(:last_name, t("user.last_name")) %>
+  <%= f.text_field(:last_name, :class => "form-control radius") %>
+</div>
+
+<div class="form-group">
+  <%= f.label(:username, t("user.username")) %>
+  <%= f.text_field(:username, :class => "form-control radius") %>
+</div>
+
+<div class="form-group">
+  <%= f.label(:password, t("user.password")) %>
+  <%= f.password_field(:password, :class => "form-control radius") %>
+</div>
+
+<div class="form-group">
+  <%= f.label(:password_confirmation, t("user.password_confirmation")) %>
+  <%= f.password_field(:password_confirmation, :class => "form-control radius") %>
+</div>
+
+<div class="form-group">
+  <%= f.label(:instrument, t("user.instrument")) %>
+  <%= f.select(:instrument, options_for_select([[t("instruments.piano"), "Piano"],
+                                                [t("instruments.strings"), "Strings"],
+                                                [t("instruments.wind"), "Wind"],
+                                                [t("instruments.harp"), "Harp"],
+                                                [t("instruments.percussion"), "Percussion"],
+                                                [t("instruments.vocal"), "Vocal"]]), {}, :class => "form-control radius") %>
+</div>
+
+<div class="form-group">
+    <%= f.label(:email, t("user.email")) %>
+    <%= f.email_field(:email, :class => "form-control radius") %>
+</div>
+
+<div class="checkbox">
+  <%= f.label(:admin, t("user.admin") + "?") %>
+  <%= f.check_box(:admin) %>
+</div>
+
+

@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <div class="panel panel-primary radius">
+      <div class="panel-heading">
+        <h1 class="panel-title text-center"><%= t "new_user.title" %>:</h1>
+      </div>
+      <div class="panel-body">
+        <div class="col-md-1"></div>
+        <div class="col-md-11">
+          <%= form_for @user do |f| %>
+            <%= render(:partial => "form", :locals => {:f => f}) %>
+            <%= submit_tag(t("new_user.create"), :class => 'btn btn-primary radius') %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3"></div>
+</div>
+
+<%= params.inspect %>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html class="no-js" lang="<%= params[:locale] %>" dir="<%= params[:locale]=="en" ? "ltr" : "rtl" %>">
+<head>
+  <title>Bmsom Rooms Bootstrap</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,800' rel='stylesheet' type='text/css'>
+  <%= csrf_meta_tags %>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="glyphicon glyphicon-th-large white"></span>
+      </button>
+      <a class="navbar-brand" href="#">BMSOM Rooms <span class="glyphicon glyphicon-music"></span></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li <%= params[:locale]=="en" ? raw('class="active"') : '' %>><%= link_to "English", :locale => 'en' %></li>
+        <li <%= params[:locale]=="he" ? raw('class="active"') : '' %>><%= link_to "עברית", :locale => 'he' %></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-home"></span> <%= t("topbar.my_reservations") %></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span> <%= t("topbar.account") %> <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"><%= t("topbar.settings") %></a></li>
+            <li class="divider"></li>
+            <li><a href="#"><%= t("topbar.logout") %></a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<div class="container">
+  <%= yield %>
+</div>
+
+</body>
+</html>

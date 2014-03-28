@@ -1,0 +1,93 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  room:
+    room_name: "Room Name"
+    contains_grand_piano: "Contains Grand Piano"
+    blank_name_error: "Name is required"
+  new_room:
+    title: "Create Room"
+    create: "Create"
+  edit_room:
+    title: "Edit Room"
+    update: "Update"
+  rooms_index:
+    title: "Rooms List"
+    yes_true: "Yes"
+    no_false: "No"
+    contains: "Contains Grand Piano"
+    actions: "Actions"
+    new_room: "Add New Room"
+    edit_room: "Edit"
+    delete_room: "Delete"
+  user:
+    first_name: "First Name"
+    last_name: "Last Name"
+    username: "Username"
+    password: "Password"
+    password_confirmation: "Password Confirmation"
+    instrument: "Instrument"
+    email: "Email"
+    admin: "Admin"
+  new_user:
+    title: "Create User"
+    create: "Create"
+  edit_user:
+    title: "Edit User"
+    update: "Edit"
+  users_index:
+    title: "Users List"
+    actions: "Actions"
+    new_user: "Add New User"
+    edit_user: "Edit"
+    delete_user: "Delete"
+  instruments:
+    piano: "Piano"
+    strings: "Strings"
+    wind: "Wind"
+    harp: "Harp"
+    percussion: "Percussion"
+    vocal: "Vocal"
+    other: "Other"
+  new_reservation:
+    title: "Practice room reservation"
+  topbar:
+    my_reservations: "My Reservations"
+    settings: "Settings"
+    account: "Account"
+    logout: "Logout"
+  login:
+    title:
+      h3: "Room Reservation System"
+      h4: "Sign In"
+    labels:
+      username: "Username"
+      password: "Password"
+      remember: "Remember me"
+    submits:
+      sign-in: "Sign In"
+  time:
+    formats:
+      custom: "%A"
+      il_date: '%d/%m/%Y'
+      il_date_words: '%d %B, %Y'
+

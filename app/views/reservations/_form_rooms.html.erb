@@ -1,0 +1,16 @@
+<div id="room_container">
+  <div class="form-group">
+    <%= submit_tag "Show Rooms", :name => "show_rooms", :class => "btn btn-info radius btn-block", :id => "show_rooms" %>
+  </div>
+
+  <% if(!params[:res_date].blank? && !params[:res_time].blank?) %>
+      <div class="form-group">
+        <% available_rooms_array(params[:res_date],params[:res_time]).each do |room| %>
+            <%= button_tag room.name,
+                           :value => room.name,
+                           :name => "room_name",
+                           :class => "btn btn-primary radius btn-block" %>
+        <% end %>
+      </div>
+  <% end %>
+</div>

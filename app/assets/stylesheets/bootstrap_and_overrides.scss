@@ -1,0 +1,13 @@
+$border-radius-base: 0px;
+$navbar-default-bg: #FF4800;
+$navbar-default-link-color: #ffffff;
+$navbar-default-link-active-color: #ffbc1e;
+$navbar-default-toggle-hover-bg: #ff8115;
+
+$font-family-sans-serif: "Raleway", "Arial";
+
+@import "bootstrap";
+
+form .clearfix:before, form .clearfix:after {
+  display: inline;
+}

@@ -1,0 +1,9 @@
+<div class="form-group">
+    <%= f.label(:name,t("room.room_name")) %>
+    <%= f.text_field(:name, :class => "form-control radius") %>
+</div>
+
+<div class="checkbox">
+    <%= f.check_box(:contains_grand_piano) %>
+    <%= f.label(:contains_grand_piano, t("room.contains_grand_piano") + "? " ) %>
+</div>

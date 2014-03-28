@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <div class="panel panel-primary radius">
+      <div class="panel-heading">
+        <h1 class="panel-title text-center" id="reservations_title"><%= t "new_reservation.title" %>:</h1>
+      </div>
+      <div class="panel-body">
+        <div class="col-md-12">
+
+          <%= form_for ([@user, @reservation]), remote: true  do |f| %>
+            <%= render(:partial => 'form_datetime', locals: { f: f }) %>
+            <%= render(:partial => 'form_notifications', locals: { f: f }) %>
+            <%= render(:partial => 'form_rooms', locals: { f: f }) %>
+          <% end %>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

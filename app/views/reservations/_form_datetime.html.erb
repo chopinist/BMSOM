@@ -1,0 +1,13 @@
+
+    <div class="form-group">
+      <%= f.label(:res_date, t("new_reservation.date")) %>
+      <%= select_tag(:res_date, options_for_select(generate_reservation_dates(5),params[:res_date]),
+                     :class => "form-control") %>
+
+      <%= f.label(:res_time, t("new_reservation.time")) %>
+      <%= select_tag(:res_time, options_for_select(generate_reservation_time(),params[:res_time]),
+                     :class => "form-control",
+                     :prompt => "Select Time") %>
+    </div>
+
+

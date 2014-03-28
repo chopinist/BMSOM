@@ -1,0 +1,20 @@
+<div class="form-group" id="notifications_container">
+  <% if !flash.now.blank? %>
+      <% if !flash[:notice].blank? %>
+          <div class="alert alert-success radius">
+            <span class="glyphicon glyphicon-ok-sign"></span>
+            <%= flash.now[:notice] %>
+          </div>
+      <% elsif !flash.now[:error].blank? %>
+          <div class="alert alert-error radius">
+            <span class="glyphicon glyphicon-remove-sign"></span>
+            <%= flash.now[:error] %>
+          </div>
+      <% elsif !flash.now[:warning].blank? %>
+          <div class="alert alert-warning radius">
+            <span class="glyphicon glyphicon-exclamation-sign"></span>
+            <%= flash.now[:warning] %>
+          </div>
+      <% end %>
+  <% end %>
+</div>
