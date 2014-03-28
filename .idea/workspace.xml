@@ -15,7 +15,7 @@
     <SUITE FILE_PATH="coverage/bmsom_rooms_bootstrap@db_migrate__bmsom_rooms_bootstrap.coverage" NAME="db:migrate: bmsom_rooms_bootstrap Coverage Results" MODIFIED="1394464691808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bmsom_rooms_bootstrap" />
     <SUITE FILE_PATH="coverage/bmsom_rooms_bootstrap@Rails_console__bmsom_rooms_bootstrap.coverage" NAME="Rails console: bmsom_rooms_bootstrap Coverage Results" MODIFIED="1395606655034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bmsom_rooms_bootstrap" />
     <SUITE FILE_PATH="coverage/bmsom_rooms_bootstrap@log_clear__bmsom_rooms_bootstrap.coverage" NAME="log:clear: bmsom_rooms_bootstrap Coverage Results" MODIFIED="1395564409797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bmsom_rooms_bootstrap" />
-    <SUITE FILE_PATH="coverage/bmsom_rooms_bootstrap@Development__bmsom_rooms_bootstrap.coverage" NAME="Development: bmsom_rooms_bootstrap Coverage Results" MODIFIED="1396001718138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bmsom_rooms_bootstrap" />
+    <SUITE FILE_PATH="coverage/bmsom_rooms_bootstrap@Development__bmsom_rooms_bootstrap.coverage" NAME="Development: bmsom_rooms_bootstrap Coverage Results" MODIFIED="1396020341233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bmsom_rooms_bootstrap" />
     <SUITE FILE_PATH="coverage/bmsom_rooms_bootstrap@db_rollback__bmsom_rooms_bootstrap.coverage" NAME="db:rollback: bmsom_rooms_bootstrap Coverage Results" MODIFIED="1394283496341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bmsom_rooms_bootstrap" />
     <SUITE FILE_PATH="coverage/bmsom_rooms_bootstrap@assets_clean_keep___bmsom_rooms_bootstrap.coverage" NAME="assets:clean[keep]: bmsom_rooms_bootstrap Coverage Results" MODIFIED="1395608505974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bmsom_rooms_bootstrap" />
     <SUITE FILE_PATH="coverage/bmsom_rooms_bootstrap@routes__bmsom_rooms_bootstrap.coverage" NAME="routes: bmsom_rooms_bootstrap Coverage Results" MODIFIED="1395171145838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bmsom_rooms_bootstrap" />
@@ -32,19 +32,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="spin.min.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/spin.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="154">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="30" selection-start="1279" selection-end="1279" vertical-scroll-proportion="0.247557" vertical-offset="486" max-vertical-offset="1892">
+            <state line="29" column="30" selection-start="1279" selection-end="1279" vertical-scroll-proportion="0.0" vertical-offset="486" max-vertical-offset="1892">
               <folding />
             </state>
           </provider>
@@ -59,28 +50,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rooms.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/rooms.css.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="198">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="demo.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/demo.css.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="198">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="application.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="2" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="396">
+            <state line="21" column="0" selection-start="734" selection-end="734" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
               <folding />
             </state>
           </provider>
@@ -89,7 +62,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="77" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.0" vertical-offset="333" max-vertical-offset="1254">
+            <state line="36" column="3" selection-start="1028" selection-end="1028" vertical-scroll-proportion="0.0" vertical-offset="792" max-vertical-offset="1254">
               <folding />
             </state>
           </provider>
@@ -107,16 +80,46 @@
       <file leaf-file-name="reservations.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/reservations.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1628">
+            <state line="32" column="0" selection-start="1413" selection-end="1413" vertical-scroll-proportion="0.0" vertical-offset="264" max-vertical-offset="1254">
+              <folding>
+                <marker date="1396036482135" expanded="true" signature="1354:1382" placeholder="..." />
+                <marker date="1396036482135" expanded="true" signature="1804:1840" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="0" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="484">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reservations.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/reservations.css.scss">
+      <file leaf-file-name="reservations_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/reservations_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="198">
+            <state line="31" column="60" selection-start="698" selection-end="698" vertical-scroll-proportion="1.2559853" vertical-offset="0" max-vertical-offset="1342">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rooms_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/rooms_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="17" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0" vertical-offset="132" max-vertical-offset="1056">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="32" selection-start="985" selection-end="998" vertical-scroll-proportion="-15.612904" vertical-offset="0" max-vertical-offset="1408">
               <folding />
             </state>
           </provider>
@@ -168,15 +171,12 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/rooms.js.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/users.js.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/reservations.js" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/spinSubmit.js" />
         <option value="$PROJECT_DIR$/app/helpers/reservations_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/reservations/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/reservations/_form_datetime.html.erb" />
         <option value="$PROJECT_DIR$/app/views/reservations/_form_rooms.html.erb" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/reservations_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/reservations/_form_notifications.html.erb" />
         <option value="$PROJECT_DIR$/app/views/reservations/create.js.erb" />
         <option value="$PROJECT_DIR$/app/views/reservations/new.html.erb" />
@@ -186,9 +186,12 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.scss" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap.css" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/reservations.js" />
+        <option value="$PROJECT_DIR$/app/controllers/reservations_controller.rb" />
       </list>
     </option>
   </component>
@@ -849,19 +852,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32418162" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3237598" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15833333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39915523" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1578125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39915523" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30517423" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30411828" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -889,10 +892,17 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="17" />
+      <option name="time" value="18" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/reservations.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="198">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="0" selection-start="798" selection-end="1704" vertical-scroll-proportion="0.0" vertical-offset="157" max-vertical-offset="1078" />
@@ -977,11 +987,6 @@
         <state line="276" column="19" selection-start="6287" selection-end="6300" vertical-scroll-proportion="0.0" vertical-offset="5555" max-vertical-offset="6248" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="323" selection-end="323" vertical-scroll-proportion="0.4273319" vertical-offset="23" max-vertical-offset="484" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/reservation.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="78" selection-end="78" vertical-scroll-proportion="0.12071331" vertical-offset="0" max-vertical-offset="729" />
@@ -1042,16 +1047,6 @@
         <state line="13" column="0" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0" vertical-offset="286" max-vertical-offset="418" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/rooms_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="17" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0" vertical-offset="132" max-vertical-offset="1056" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="6" selection-start="2483" selection-end="2483" vertical-scroll-proportion="0.0" vertical-offset="362" max-vertical-offset="1408" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/reservations/_form_rooms.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="117" selection-start="160" selection-end="170" vertical-scroll-proportion="-1.4193548" vertical-offset="0" max-vertical-offset="484" />
@@ -1065,11 +1060,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/reservations/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="8" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0" vertical-offset="110" max-vertical-offset="594" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/reservations_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="11" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0" vertical-offset="161" max-vertical-offset="1342" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/reservations/_form_notifications.html.erb">
@@ -1127,33 +1117,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/reservations.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1628">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="21" selection-start="662" selection-end="662" vertical-scroll-proportion="0.5221519" vertical-offset="0" max-vertical-offset="632" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3991" column="10" selection-start="77976" selection-end="77976" vertical-scroll-proportion="5.2017393" vertical-offset="84811" max-vertical-offset="127402" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="2" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="77" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.0" vertical-offset="333" max-vertical-offset="1254">
+        <state line="36" column="3" selection-start="1028" selection-end="1028" vertical-scroll-proportion="0.0" vertical-offset="792" max-vertical-offset="1254">
           <folding />
         </state>
       </provider>
@@ -1167,7 +1133,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="30" selection-start="1279" selection-end="1279" vertical-scroll-proportion="0.247557" vertical-offset="486" max-vertical-offset="1892">
+        <state line="29" column="30" selection-start="1279" selection-end="1279" vertical-scroll-proportion="0.0" vertical-offset="486" max-vertical-offset="1892">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="2" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0" vertical-offset="14" max-vertical-offset="594" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/rooms_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="17" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0" vertical-offset="132" max-vertical-offset="1056">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="734" selection-end="734" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="32" selection-start="985" selection-end="998" vertical-scroll-proportion="-15.612904" vertical-offset="0" max-vertical-offset="1408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="484">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/reservations.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="1413" selection-end="1413" vertical-scroll-proportion="0.0" vertical-offset="264" max-vertical-offset="1254">
+          <folding>
+            <marker date="1396036482135" expanded="true" signature="1354:1382" placeholder="..." />
+            <marker date="1396036482135" expanded="true" signature="1804:1840" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/reservations_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="60" selection-start="698" selection-end="698" vertical-scroll-proportion="1.2559853" vertical-offset="0" max-vertical-offset="1342">
           <folding />
         </state>
       </provider>
