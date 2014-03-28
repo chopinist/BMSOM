@@ -229,7 +229,6 @@
     <orderEntry type="library" scope="PROVIDED" name="arel (v4.0.2, ruby-2.0.0-p195) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="atomic (v1.1.15, ruby-2.0.0-p195) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bcrypt (v3.1.7, ruby-2.0.0-p195) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="bcrypt-ruby (v3.1.5, ruby-2.0.0-p195) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bootstrap-sass (v3.1.1.0, ruby-2.0.0-p195) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.1.4, ruby-2.0.0-p195) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.3.5, ruby-2.0.0-p195) [gem]" level="application" />
