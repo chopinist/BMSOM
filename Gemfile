@@ -39,8 +39,6 @@ end
 # Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', ENV["RAILS_ENV"] == "production" ? '~> 3.0.1' : '~> 3.1.0'
 
-gem 'bootstrap-sass'
-
 gem 'nokogiri'
 
 # Use unicorn as the app server
