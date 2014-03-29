@@ -15,7 +15,7 @@
     <SUITE FILE_PATH="coverage/bmsom_rooms_bootstrap@Rails_console__bmsom_rooms_bootstrap.coverage" NAME="Rails console: bmsom_rooms_bootstrap Coverage Results" MODIFIED="1395606655034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bmsom_rooms_bootstrap" />
     <SUITE FILE_PATH="coverage/bmsom_rooms_bootstrap@db_migrate__bmsom_rooms_bootstrap.coverage" NAME="db:migrate: bmsom_rooms_bootstrap Coverage Results" MODIFIED="1394464691808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bmsom_rooms_bootstrap" />
     <SUITE FILE_PATH="coverage/bmsom_rooms_bootstrap@log_clear__bmsom_rooms_bootstrap.coverage" NAME="log:clear: bmsom_rooms_bootstrap Coverage Results" MODIFIED="1395564409797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bmsom_rooms_bootstrap" />
-    <SUITE FILE_PATH="coverage/bmsom_rooms_bootstrap@Development__bmsom_rooms_bootstrap.coverage" NAME="Development: bmsom_rooms_bootstrap Coverage Results" MODIFIED="1396073903117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bmsom_rooms_bootstrap" />
+    <SUITE FILE_PATH="coverage/bmsom_rooms_bootstrap@Development__bmsom_rooms_bootstrap.coverage" NAME="Development: bmsom_rooms_bootstrap Coverage Results" MODIFIED="1396079768683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bmsom_rooms_bootstrap" />
     <SUITE FILE_PATH="coverage/bmsom_rooms_bootstrap@assets_clean_keep___bmsom_rooms_bootstrap.coverage" NAME="assets:clean[keep]: bmsom_rooms_bootstrap Coverage Results" MODIFIED="1395608505974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bmsom_rooms_bootstrap" />
     <SUITE FILE_PATH="coverage/bmsom_rooms_bootstrap@db_rollback__bmsom_rooms_bootstrap.coverage" NAME="db:rollback: bmsom_rooms_bootstrap Coverage Results" MODIFIED="1394283496341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bmsom_rooms_bootstrap" />
     <SUITE FILE_PATH="coverage/bmsom_rooms_bootstrap@routes__bmsom_rooms_bootstrap.coverage" NAME="routes: bmsom_rooms_bootstrap Coverage Results" MODIFIED="1395171145838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bmsom_rooms_bootstrap" />
@@ -80,10 +80,10 @@
       <file leaf-file-name="reservations.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/reservations.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="30" selection-start="1645" selection-end="1645" vertical-scroll-proportion="0.0" vertical-offset="462" max-vertical-offset="1276">
+            <state line="42" column="70" selection-start="1818" selection-end="1826" vertical-scroll-proportion="0.0" vertical-offset="69" max-vertical-offset="1254">
               <folding>
-                <marker date="1396074464889" expanded="false" signature="1348:1376" placeholder="..." />
-                <marker date="1396074464889" expanded="false" signature="1844:1880" placeholder="..." />
+                <marker date="1396079763497" expanded="false" signature="1368:1396" placeholder="..." />
+                <marker date="1396079763497" expanded="true" signature="1818:1854" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -98,10 +98,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reservations_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="reservations_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/reservations_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="41" selection-start="558" selection-end="558" vertical-scroll-proportion="0.28455284" vertical-offset="441" max-vertical-offset="1320">
+            <state line="28" column="41" selection-start="558" selection-end="558" vertical-scroll-proportion="0.0" vertical-offset="309" max-vertical-offset="1320">
               <folding />
             </state>
           </provider>
@@ -116,10 +116,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="67" selection-start="1007" selection-end="1020" vertical-scroll-proportion="-9.225806" vertical-offset="198" max-vertical-offset="1408">
+            <state line="4" column="70" selection-start="234" selection-end="234" vertical-scroll-proportion="0.14617941" vertical-offset="0" max-vertical-offset="1430">
               <folding />
             </state>
           </provider>
@@ -187,11 +187,11 @@
         <option value="$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap.css" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/vendor/assets/javascripts/bootstrap.js" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/reservations.js" />
         <option value="$PROJECT_DIR$/app/controllers/reservations_controller.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/reservations.js" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       </list>
     </option>
   </component>
@@ -856,7 +856,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32312566" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32312566" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -864,7 +864,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39915523" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30411828" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30411828" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1138,23 +1138,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="67" selection-start="1007" selection-end="1020" vertical-scroll-proportion="-9.225806" vertical-offset="198" max-vertical-offset="1408">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/reservations.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="30" selection-start="1645" selection-end="1645" vertical-scroll-proportion="0.0" vertical-offset="462" max-vertical-offset="1276">
-          <folding>
-            <marker date="1396074464889" expanded="false" signature="1348:1376" placeholder="..." />
-            <marker date="1396074464889" expanded="false" signature="1844:1880" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="34" selection-start="1890" selection-end="1890" vertical-scroll-proportion="0.0" vertical-offset="446" max-vertical-offset="1100">
@@ -1171,7 +1154,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/reservations_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="41" selection-start="558" selection-end="558" vertical-scroll-proportion="0.28455284" vertical-offset="441" max-vertical-offset="1320">
+        <state line="28" column="41" selection-start="558" selection-end="558" vertical-scroll-proportion="0.0" vertical-offset="309" max-vertical-offset="1320">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/reservations.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="70" selection-start="1818" selection-end="1826" vertical-scroll-proportion="0.0" vertical-offset="69" max-vertical-offset="1254">
+          <folding>
+            <marker date="1396079763497" expanded="false" signature="1368:1396" placeholder="..." />
+            <marker date="1396079763497" expanded="true" signature="1818:1854" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="70" selection-start="234" selection-end="234" vertical-scroll-proportion="0.14617941" vertical-offset="0" max-vertical-offset="1430">
           <folding />
         </state>
       </provider>

@@ -28,7 +28,7 @@ $(document).ready(function () {
     });
 
     $('#new_reservation').on('ajax:beforeSend', function(event, data, status, xhr) {
-        $(":button").attr("disabled", true);
+        $(":button:not(#navbar-toggle)").attr("disabled", true);
         $("#reservations_title").append('<span class="spinner" style="position:relative; left:8px;" id="titleSpinner"></span>');
 
         var target = document.getElementById('titleSpinner');
@@ -36,7 +36,6 @@ $(document).ready(function () {
     });
 
     $('#new_reservation').on('ajax:success', function(event, data, status, xhr) {
-        $(":button").attr("disabled", false);
         $("#titleSpinner").remove();
     });
 
