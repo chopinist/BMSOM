@@ -7,7 +7,7 @@
       <%= f.label(:res_time, t("new_reservation.time")) %>
       <%= select_tag(:res_time, options_for_select(generate_reservation_time(),params[:res_time]),
                      :class => "form-control",
-                     :prompt => "Select Time") %>
+                     :prompt => t("new_reservation.time_prompt")) %>
     </div>
 
 

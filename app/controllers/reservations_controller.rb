@@ -16,6 +16,7 @@ class ReservationsController < ApplicationController
   end
 
   def create
+    sleep 1
     @reservation = @user.reservations.build(safe_params)
 
     if !params.has_key?(:room_name)
@@ -28,8 +29,10 @@ class ReservationsController < ApplicationController
       @reservation.room_id = Room.find_by_name(params[:room_name]).id
       @reservation.time = Time.parse("#{params[:res_date]} #{params[:res_time]}")
       if @reservation.save
-        flash.now[:notice] = "Successfully reserved room " + params[:room_name] + " at " +
-                              params[:res_date] + ", " + params[:res_time]
+        flash.now[:notice] = t("new_reservation.success1") + params[:room_name] +
+                             t("new_reservation.success2") +
+                              params[:res_date] +
+                             t("new_reservation.success3") + params[:res_time]
 
         respond_to do |format|
           format.js { @reservation = @user.reservations.build }

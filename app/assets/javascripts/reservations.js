@@ -29,22 +29,28 @@ $(document).ready(function () {
 
     $('#new_reservation').on('ajax:beforeSend', function(event, data, status, xhr) {
         $(":button:not(#navbar-toggle)").attr("disabled", true);
-        $("#reservations_title").append('<span class="spinner" style="position:relative; left:8px;" id="titleSpinner"></span>');
+        $("#titleSpinner").show();
 
-        var target = document.getElementById('titleSpinner');
-        var spinner = new Spinner(opts).spin(target);
+        if ( $("#titleSpinner").children().length == 0 ) {
+            var target = document.getElementById('titleSpinner');
+            var spinner = new Spinner(opts).spin(target);
+        }
+
     });
 
     $('#new_reservation').on('ajax:success', function(event, data, status, xhr) {
-        $("#titleSpinner").remove();
+        $("#titleSpinner").hide();
     });
 
     $("body").on("click", ":button:focus:not(#navbar-toggle)", function(){
-        $(":button:focus").html('<span class="spinner" style="position:relative; top:5px; left:9px" id="buttonSpinner"></span> Loading...');
+        var room = $(":button:focus").text().trim();
+        var button_id = "buttonSpinner" + room;
+        $("#" + button_id).show();
 
-        var target = document.getElementById('buttonSpinner');
-        var spinner = new Spinner(opts).spin(target);
-
+        if ( $("#" + button_id).children().length == 0 ) {
+            var target = document.getElementById(button_id);
+            var spinner = new Spinner(opts).spin(target);
+        }
     });
 
 

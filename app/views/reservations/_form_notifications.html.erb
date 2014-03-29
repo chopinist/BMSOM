@@ -10,11 +10,6 @@
             <span class="glyphicon glyphicon-remove-sign"></span>
             <%= flash.now[:error] %>
           </div>
-      <% elsif !flash.now[:warning].blank? %>
-          <div class="alert alert-warning radius">
-            <span class="glyphicon glyphicon-exclamation-sign"></span>
-            <%= flash.now[:warning] %>
-          </div>
       <% end %>
   <% end %>
 </div>

@@ -66,6 +66,15 @@ he:
     percussion: "כלי הקשה"
     vocal: "שירה"
     other: "אחר"
+  new_reservation:
+    title: "הזמנת חדרי אימון"
+    date: "בחר תאריך"
+    time: "בחר זמן"
+    success1: "חדר "
+    success2: " הוזמן בהצלחה בתאריך "
+    success3: " בשעה "
+    time_prompt: "בחר זמן"
+    no_rooms: "אין חדרים זמינים"
   topbar:
     my_reservations: "ההזמנות שלי"
     settings: "הגדרות"

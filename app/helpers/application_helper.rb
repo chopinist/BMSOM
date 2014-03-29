@@ -10,10 +10,6 @@ module ApplicationHelper
       end
     end
 
-    if arr.size == 0
-      flash.now[:warning] = "No Available Rooms"
-    end
-
     return arr
   end
 end

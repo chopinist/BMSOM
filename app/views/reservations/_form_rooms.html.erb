@@ -5,11 +5,25 @@
 
   <% if(!params[:res_date].blank? && !params[:res_time].blank?) %>
       <div class="form-group">
-        <% available_rooms_array(params[:res_date],params[:res_time]).each do |room| %>
-            <%= button_tag room.name,
-                           :value => room.name,
-                           :name => "room_name",
-                           :class => "btn btn-primary radius btn-block" %>
+        <% rooms_arr = available_rooms_array(params[:res_date],params[:res_time]) %>
+        <% if rooms_arr.size == 0 %>
+            <div class="alert alert-warning radius">
+              <span class="glyphicon glyphicon-exclamation-sign"></span>
+              <%= t "new_reservation.no_rooms" %>
+            </div>
+        <% else %>
+
+            <% rooms_arr.each do |room| %>
+                <button value="<%= room.name %>"
+                        name="room_name"
+                        class="btn btn-primary radius btn-block">
+                  <span class="spinner"
+                        style="display: none; position: relative; top:5px; left:<%= params[:locale]=="en" ? "8px;" : "11px;" %>"
+                        id="buttonSpinner<%= room.name %>">
+                  </span>
+                  <%= room.name %>
+                </button>
+            <% end %>
         <% end %>
       </div>
   <% end %>

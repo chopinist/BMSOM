@@ -3,7 +3,12 @@
   <div class="col-md-6">
     <div class="panel panel-primary radius">
       <div class="panel-heading">
-        <h1 class="panel-title text-center" id="reservations_title"><%= t "new_reservation.title" %>:</h1>
+        <h1 class="panel-title text-center" id="reservations_title"><%= t "new_reservation.title" %>:
+          <span class="spinner"
+                style="display: none; position: relative; top:4px; left:<%= params[:locale]=="en" ? "2px;" : "4px;" %>"
+                id="titleSpinner">
+          </span>
+        </h1>
       </div>
       <div class="panel-body">
         <div class="col-md-12">
