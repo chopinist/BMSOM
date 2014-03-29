@@ -16,6 +16,7 @@ class ReservationsController < ApplicationController
   end
 
   def create
+    sleep 1
     @reservation = @user.reservations.build(safe_params)
 
     if !params.has_key?(:room_name)
