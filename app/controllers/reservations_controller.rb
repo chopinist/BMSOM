@@ -2,6 +2,7 @@ class ReservationsController < ApplicationController
   before_action :set_user
 
   def index
+    @reservations = @user.reservations.active_total
   end
 
   def show
@@ -16,7 +17,6 @@ class ReservationsController < ApplicationController
   end
 
   def create
-    sleep 1
     @reservation = @user.reservations.build(safe_params)
 
     if !params.has_key?(:room_name)
@@ -39,11 +39,29 @@ class ReservationsController < ApplicationController
           format.html { redirect_to new_user_reservation_path }
         end
       else
-        flash.now[:error] = "Fail"
-        render 'new'
+        errors_string = ""
+        @reservation.errors.full_messages.each do |error|
+          if @reservation.errors.count > 1 && error != @reservation.errors.full_messages.last
+            errors_string += error + "; "
+          else
+            errors_string += error
+          end
+        end
+        flash.now[:error] = errors_string
+        respond_to do |format|
+          format.js
+          format.html { render 'new' }
+        end
       end
    end
+  end
 
+  def destroy
+    @reservation = Reservation.find(params[:id]).destroy
+    respond_to do |format|
+      format.js
+      format.html { render 'index' }
+    end
   end
 
   private

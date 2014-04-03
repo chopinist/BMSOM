@@ -75,11 +75,17 @@ he:
     success3: " בשעה "
     time_prompt: "בחר זמן"
     no_rooms: "אין חדרים זמינים"
+  my_reservations:
+    title: "ההזמנות שלי"
+    roomlist1: "חדר "
+    roomlist2: " ב"
+    remove: "הסר"
   topbar:
     my_reservations: "ההזמנות שלי"
     settings: "הגדרות"
     account: "חשבון"
     logout: "התנתקות"
+    new_reservation: "הזמנה חדשה"
   login:
     title:
       h3: "מערכת הזמנת חדרים"

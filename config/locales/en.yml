@@ -77,11 +77,17 @@ en:
     success3: ", "
     time_prompt: "Select Time"
     no_rooms: "There are no available rooms"
+  my_reservations:
+    title: "My Reservations"
+    roomlist1: "Room "
+    roomlist2: " at "
+    remove: "Remove"
   topbar:
     my_reservations: "My Reservations"
     settings: "Settings"
     account: "Account"
     logout: "Logout"
+    new_reservation: "New Reservation"
   login:
     title:
       h3: "Room Reservation System"

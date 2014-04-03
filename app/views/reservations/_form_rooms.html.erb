@@ -21,6 +21,9 @@
                         style="display: none; position: relative; top:5px; left:<%= params[:locale]=="en" ? "8px;" : "11px;" %>"
                         id="buttonSpinner<%= room.name %>">
                   </span>
+                  <% if room.contains_grand_piano %>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                  <% end %>
                   <%= room.name %>
                 </button>
             <% end %>

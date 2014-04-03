@@ -6,9 +6,9 @@
             <%= flash.now[:notice] %>
           </div>
       <% elsif !flash.now[:error].blank? %>
-          <div class="alert alert-error radius">
+          <div class="alert alert-danger radius">
             <span class="glyphicon glyphicon-remove-sign"></span>
-            <%= flash.now[:error] %>
+            <%= flash.now[:error].html_safe %>
           </div>
       <% end %>
   <% end %>

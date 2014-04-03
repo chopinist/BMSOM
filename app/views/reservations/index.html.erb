@@ -1,2 +1,28 @@
-<h1>Reservations#index</h1>
-<p>Find me in app/views/reservations/index.html.erb</p>
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <div class="panel panel-primary radius">
+      <div class="panel-heading">
+        <h1 class="panel-title text-center" id="reservations_title"><%= t "my_reservations.title" %>:
+          <span class="spinner"
+                style="display: none; position: relative; top:4px; left:<%= params[:locale]=="en" ? "2px;" : "4px;" %>"
+                id="titleSpinner">
+          </span>
+        </h1>
+      </div>
+      <div class="panel-body">
+        <div class="col-md-12">
+
+          <% @reservations.each do |reservation| %>
+              <p><%= t "my_reservations.roomlist1" %><%= reservation.room.name %>
+                <%= t "my_reservations.roomlist2" %><%= l(reservation.time, :format => :custom) %>,
+                <%= l(reservation.time, :format => :il_date_words) %>,
+                <%= reservation.time.strftime("%H:%M") %>
+                <%= button_to(t("my_reservations.remove"), [@user,reservation], :method => :delete, :class => 'btn btn-danger radius', remote: true) %></p>
+          <% end %>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
