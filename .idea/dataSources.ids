@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
-  <data-source source="LOCAL" name="Rails bmsom_rooms_bootstrap: development" uuid="9a7cc3b4-9d76-4009-9d54-1496d00c860b">
+  <data-source source="LOCAL" name="Rails bmsom_rooms_bootstrap: development" uuid="f3eaccb0-87e1-4091-a1b7-abf110d6e828">
     <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
   </data-source>
 </component>

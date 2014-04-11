@@ -57,9 +57,17 @@ class ReservationsController < ApplicationController
   end
 
   def destroy
-    @reservation = Reservation.find(params[:id]).destroy
+    @reservation = Reservation.find_by_id(params[:id])
+
+    if @reservation.nil?
+      flash.now[:error] = t("remove_reservation.error_no_id")
+    else
+      @reservation.destroy
+      flash.now[:notice] = t("remove_reservation.success")
+    end
+
     respond_to do |format|
-      format.js
+      format.js { @reservations = @user.reservations.active_total }
       format.html { render 'index' }
     end
   end

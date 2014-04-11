@@ -7,12 +7,13 @@ BmsomRoomsBootstrap::Application.routes.draw do
     resources :users do
       resources :reservations, only: [:index, :edit, :update, :new, :create, :destroy]
     end
-
-    root 'demo#index'
   end
+
+  root 'reservations#index'
 
   get '*path', to: redirect("/#{I18n.locale}/%{path}"), constraints: lambda { |req| !req.path.starts_with? "/#{I18n.default_locale}/" }
 
+  get '*path' => redirect('/')
 
 
   # The priority is based upon order of creation: first created -> highest priority.

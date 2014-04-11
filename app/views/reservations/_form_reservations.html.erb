@@ -1,0 +1,31 @@
+<div class="form-group" id="reservations_container">
+
+  <% if @reservations.size == 0 %>
+      <div class="alert alert-warning radius">
+        <span class="glyphicon glyphicon-exclamation-sign"></span>
+        <%= t "remove_reservation.no_reservations" %>
+      </div>
+  <% else %>
+      <% @reservations.each do |reservation| %>
+
+          <div class="btn-group btn-block">
+            <button type="button" class="btn btn-info dropdown-toggle btn-block" data-toggle="dropdown">
+              <%= reservation.time.strftime("%D") %>
+              <span class="glyphicon glyphicon-calendar"></span>
+              <%= reservation.time.strftime("%H:%M") %><span class="glyphicon glyphicon-time"></span>
+              <%= reservation.room.name %>
+              <span class="glyphicon glyphicon-home"></span>
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu btn-block" role="menu">
+              <li><%= link_to(t("my_reservations.remove"),
+                              [@user,reservation],
+                              :method => :delete,
+                              :remote => true) %></li>
+            </ul>
+          </div>
+      <% end %>
+  <% end %>
+
+
+</div>

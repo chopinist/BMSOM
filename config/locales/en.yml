@@ -77,11 +77,19 @@ en:
     success3: ", "
     time_prompt: "Select Time"
     no_rooms: "There are no available rooms"
+    time_passed: "Time passed"
+    no_more_day: "You can only reserve two hours per day"
+    no_more: "You can only reserve two hours"
+    grand_pianos_warning: "Room reserved for pianists until 20:00"
+    already_taken: " Rhas already been taken"
+    room: "Room "
   my_reservations:
     title: "My Reservations"
-    roomlist1: "Room "
-    roomlist2: " at "
     remove: "Remove"
+  remove_reservation:
+    success: "Successfully removed reservation"
+    error_no_id: "Reservation doesn't exists"
+    no_reservations: "Currently there are no reservations"
   topbar:
     my_reservations: "My Reservations"
     settings: "Settings"
