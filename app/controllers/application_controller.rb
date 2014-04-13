@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  require 'bcrypt'
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
@@ -15,10 +16,19 @@ class ApplicationController < ActionController::Base
     end
 
     def confirm_logged_in
-      unless session[:user_id]
-        return false
-      else
+
+      remember_tokens = RememberToken.where(:user_id => cookies[:user_id])
+
+      remember_tokens.each do |token|
+        if(BCrypt::Password.new(token.remember_token) == cookies[:remember_token])
+          return true
+        end
+      end
+
+      if session[:user_id]
         return true
+      else
+        return false
       end
     end
 

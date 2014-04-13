@@ -11,7 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140407190551) do
+ActiveRecord::Schema.define(version: 20140413133416) do
+
+  create_table "remember_tokens", force: true do |t|
+    t.integer "user_id"
+    t.string  "remember_token"
+  end
 
   create_table "reservations", force: true do |t|
     t.integer  "user_id"
@@ -19,6 +24,7 @@ ActiveRecord::Schema.define(version: 20140407190551) do
     t.datetime "time"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "lock_version"
   end
 
   create_table "rooms", force: true do |t|
