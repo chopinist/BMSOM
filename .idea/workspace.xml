@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="24262f03-3ce4-4e34-bbaa-2f6d4f539b47" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20140413200415_remember.rb" afterPath="$PROJECT_DIR$/db/migrate/20140413200415_remember.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20140413201333_ds.rb" afterPath="$PROJECT_DIR$/db/migrate/20140413201333_ds.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bmsom_rooms_bootstrap.iws" />
@@ -92,16 +93,25 @@
       <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/schema.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="5" selection-start="797" selection-end="1848" vertical-scroll-proportion="0.0" vertical-offset="518" max-vertical-offset="1210">
+            <state line="46" column="5" selection-start="797" selection-end="1848" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1210">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20140413200415_remember.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="20140413200415_remember.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20140413200415_remember.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="1164" selection-end="1164" vertical-scroll-proportion="1.179173" vertical-offset="0" max-vertical-offset="968">
+            <state line="3" column="0" selection-start="55" selection-end="176" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="968">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20140413201333_ds.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20140413201333_ds.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="0" selection-start="162" selection-end="162" vertical-scroll-proportion="0.30321592" vertical-offset="0" max-vertical-offset="653">
               <folding />
             </state>
           </provider>
@@ -125,7 +135,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/helpers/rooms_helper.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/rooms.js.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/users.js.erb" />
@@ -176,6 +185,7 @@
         <option value="$PROJECT_DIR$/db/migrate/20140413160824_heroku_migrate.rb" />
         <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140413200415_remember.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140413201333_ds.rb" />
       </list>
     </option>
   </component>
@@ -941,14 +951,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28299895" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.234375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.234375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39915523" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -984,13 +994,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0" vertical-offset="110" max-vertical-offset="440">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/login_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="8" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0" vertical-offset="440" max-vertical-offset="836">
@@ -1262,7 +1265,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140413200415_remember.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1164" selection-end="1164" vertical-scroll-proportion="1.179173" vertical-offset="0" max-vertical-offset="968">
+        <state line="3" column="0" selection-start="55" selection-end="176" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="968">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140413201333_ds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="162" selection-end="162" vertical-scroll-proportion="0.30321592" vertical-offset="0" max-vertical-offset="653">
           <folding />
         </state>
       </provider>
