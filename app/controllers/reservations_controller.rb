@@ -1,5 +1,5 @@
 class ReservationsController < ApplicationController
-  before_action :set_user
+  before_action :set_user, :redirect_to_login
 
   def index
     @reservations = @user.reservations.active_total
@@ -61,6 +61,8 @@ class ReservationsController < ApplicationController
 
     if @reservation.nil?
       flash.now[:error] = t("remove_reservation.error_no_id")
+    elsif Time.now + 3.hours >= @reservation.time
+      flash.now[:error] = t("remove_reservation.remove_time")
     else
       @reservation.destroy
       flash.now[:notice] = t("remove_reservation.success")

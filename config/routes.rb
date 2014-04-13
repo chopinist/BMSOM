@@ -2,19 +2,23 @@ BmsomRoomsBootstrap::Application.routes.draw do
 
   scope ":locale", locale: /#{I18n.available_locales.join("|")}/ do
 
-    resources :rooms
+    resources :rooms, only: [:index, :edit, :update, :new, :create, :destroy]
 
-    resources :users do
+    resources :users, only: [:index, :edit, :update, :new, :create, :destroy] do
       resources :reservations, only: [:index, :edit, :update, :new, :create, :destroy]
     end
+
+    post ':controller(/:action(/:id(.:format)))'
+    get ':controller(/:action(/:id(.:format)))'
+
+    root :to => 'login#index', :as => :root_with_locale
   end
 
-  root 'reservations#index'
+  root  'login#index', locale: "en"
 
   get '*path', to: redirect("/#{I18n.locale}/%{path}"), constraints: lambda { |req| !req.path.starts_with? "/#{I18n.default_locale}/" }
 
   get '*path' => redirect('/')
-
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

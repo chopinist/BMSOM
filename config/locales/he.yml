@@ -88,21 +88,21 @@ he:
     success: "ההזמנה הוסרה בהצלחה"
     error_no_id: "ההזמנה אינה קיימת"
     no_reservations: "אין הזמנות כעת"
+    remove_time: "ניתן לבטל הזמנה עד כ-3 שעות לפני זמנה"
   topbar:
     my_reservations: "ההזמנות שלי"
     settings: "הגדרות"
     account: "חשבון"
     logout: "התנתקות"
     new_reservation: "הזמנה חדשה"
+    forgot: "שכחתי את הססמה"
   login:
-    title:
-      h3: "מערכת הזמנת חדרים"
-      h4: "התחברות"
+    title: "התחברות"
     labels:
       username: "שם משתמש"
       password: "ססמה"
       remember: "זכור אותי"
-    submits:
+    submit:
       sign-in: "התחברות"
   date:
     abbr_day_names:

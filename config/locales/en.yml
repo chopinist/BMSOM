@@ -81,7 +81,7 @@ en:
     no_more_day: "You can only reserve two hours per day"
     no_more: "You can only reserve two hours"
     grand_pianos_warning: "Room reserved for pianists until 20:00"
-    already_taken: " Rhas already been taken"
+    already_taken: " has already been taken"
     room: "Room "
   my_reservations:
     title: "My Reservations"
@@ -90,21 +90,21 @@ en:
     success: "Successfully removed reservation"
     error_no_id: "Reservation doesn't exists"
     no_reservations: "Currently there are no reservations"
+    remove_time: "You can remove a reservation up to 3 hours before its time"
   topbar:
     my_reservations: "My Reservations"
     settings: "Settings"
     account: "Account"
     logout: "Logout"
     new_reservation: "New Reservation"
+    forgot: "Forgot my password"
   login:
-    title:
-      h3: "Room Reservation System"
-      h4: "Sign In"
+    title: "Sign in"
     labels:
       username: "Username"
       password: "Password"
       remember: "Remember me"
-    submits:
+    submit:
       sign-in: "Sign In"
   time:
     formats:

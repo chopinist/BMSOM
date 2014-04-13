@@ -1,15 +1,13 @@
+<div class="form-group">
+  <span class="glyphicon glyphicon-calendar"></span>
+  <%= f.label(:res_date, t("new_reservation.date")) %>
+  <%= select_tag(:res_date, options_for_select(generate_reservation_dates(5),params[:res_date]),
+                 :class => "form-control") %>
 
-    <div class="form-group">
-      <span class="glyphicon glyphicon-calendar"></span>
-      <%= f.label(:res_date, t("new_reservation.date")) %>
-      <%= select_tag(:res_date, options_for_select(generate_reservation_dates(5),params[:res_date]),
-                     :class => "form-control") %>
-
-      <span class="glyphicon glyphicon-time"></span>
-      <%= f.label(:res_time, t("new_reservation.time")) %>
-      <%= select_tag(:res_time, options_for_select(generate_reservation_time(),params[:res_time]),
-                     :class => "form-control",
-                     :prompt => t("new_reservation.time_prompt")) %>
-    </div>
-
+  <span class="glyphicon glyphicon-time"></span>
+  <%= f.label(:res_time, t("new_reservation.time")) %>
+  <%= select_tag(:res_time, options_for_select(generate_reservation_time(),params[:res_time]),
+                 :class => "form-control",
+                 :prompt => t("new_reservation.time_prompt")) %>
+</div>
 

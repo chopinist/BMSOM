@@ -14,4 +14,18 @@ class ApplicationController < ActionController::Base
       { locale: I18n.locale }
     end
 
+    def confirm_logged_in
+      unless session[:user_id]
+        return false
+      else
+        return true
+      end
+    end
+
+    def redirect_to_login
+      unless confirm_logged_in
+        redirect_to(:controller => 'login',:action => 'index')
+      end
+    end
+
 end
