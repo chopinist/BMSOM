@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="24262f03-3ce4-4e34-bbaa-2f6d4f539b47" name="Default" comment="" />
+    <list default="true" id="24262f03-3ce4-4e34-bbaa-2f6d4f539b47" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/bmsom_rooms_bootstrap.iml" afterPath="$PROJECT_DIR$/.idea/bmsom_rooms_bootstrap.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="bmsom_rooms_bootstrap.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,8 +15,8 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/bmsom_rooms_bootstrap@Rails_console__bmsom_rooms_bootstrap.coverage" NAME="Rails console: bmsom_rooms_bootstrap Coverage Results" MODIFIED="1397452501744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bmsom_rooms_bootstrap" />
     <SUITE FILE_PATH="coverage/bmsom_rooms_bootstrap@db_migrate__bmsom_rooms_bootstrap.coverage" NAME="db:migrate: bmsom_rooms_bootstrap Coverage Results" MODIFIED="1397396491141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bmsom_rooms_bootstrap" />
-    <SUITE FILE_PATH="coverage/bmsom_rooms_bootstrap@Rails_console__bmsom_rooms_bootstrap.coverage" NAME="Rails console: bmsom_rooms_bootstrap Coverage Results" MODIFIED="1397402637580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bmsom_rooms_bootstrap" />
     <SUITE FILE_PATH="coverage/bmsom_rooms_bootstrap@log_clear__bmsom_rooms_bootstrap.coverage" NAME="log:clear: bmsom_rooms_bootstrap Coverage Results" MODIFIED="1395564409797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bmsom_rooms_bootstrap" />
     <SUITE FILE_PATH="coverage/bmsom_rooms_bootstrap@Development__bmsom_rooms_bootstrap.coverage" NAME="Development: bmsom_rooms_bootstrap Coverage Results" MODIFIED="1397452069164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bmsom_rooms_bootstrap" />
     <SUITE FILE_PATH="coverage/bmsom_rooms_bootstrap@assets_clean_keep___bmsom_rooms_bootstrap.coverage" NAME="assets:clean[keep]: bmsom_rooms_bootstrap Coverage Results" MODIFIED="1395608505974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bmsom_rooms_bootstrap" />
@@ -50,10 +53,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="89" selection-start="2196" selection-end="2196" vertical-scroll-proportion="0.46469623" vertical-offset="575" max-vertical-offset="1452">
+            <state line="39" column="89" selection-start="2196" selection-end="2196" vertical-scroll-proportion="-9.129032" vertical-offset="575" max-vertical-offset="1452">
               <folding />
             </state>
           </provider>
@@ -104,10 +107,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="seeds.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="seeds.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/seeds.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="286">
+            <state line="13" column="41" selection-start="543" selection-end="543" vertical-scroll-proportion="0.43797857" vertical-offset="0" max-vertical-offset="653">
               <folding />
             </state>
           </provider>
@@ -131,7 +134,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/helpers/rooms_helper.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/rooms.js.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/users.js.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/spinSubmit.js" />
@@ -182,6 +184,7 @@
         <option value="$PROJECT_DIR$/db/migrate/20140413200415_remember.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140413201333_ds.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/db/seeds.rb" />
       </list>
     </option>
   </component>
@@ -657,7 +660,7 @@
       <recent name="C:\Users\Eylam\SkyDrive\Rails Projects\bmsom_rooms_bootstrap\config\locales" />
     </key>
   </component>
-  <component name="RunManager" selected="Rails.Development: bmsom_rooms_bootstrap">
+  <component name="RunManager" selected="IRB console.Rails console: bmsom_rooms_bootstrap">
     <configuration default="false" name="Rails console: bmsom_rooms_bootstrap" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
       <module name="bmsom_rooms_bootstrap" />
       <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -673,9 +676,7 @@
       <IRB_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/bin/rails" />
       <IRB_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="console" />
       <IRB_RUN_CONFIG NAME="IS_RAILS_CONSOLE" VALUE="true" />
-      <RunnerSettings RunnerId="RubyDebugRunner" />
       <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
@@ -910,11 +911,11 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Rake.db:migrate: bmsom_rooms_bootstrap" />
-        <item index="1" class="java.lang.String" itemvalue="Rake.assets:clean[keep]: bmsom_rooms_bootstrap" />
-        <item index="2" class="java.lang.String" itemvalue="Rake.routes: bmsom_rooms_bootstrap" />
-        <item index="3" class="java.lang.String" itemvalue="Rake.log:clear: bmsom_rooms_bootstrap" />
-        <item index="4" class="java.lang.String" itemvalue="IRB console.Rails console: bmsom_rooms_bootstrap" />
+        <item index="0" class="java.lang.String" itemvalue="IRB console.Rails console: bmsom_rooms_bootstrap" />
+        <item index="1" class="java.lang.String" itemvalue="Rake.db:migrate: bmsom_rooms_bootstrap" />
+        <item index="2" class="java.lang.String" itemvalue="Rake.assets:clean[keep]: bmsom_rooms_bootstrap" />
+        <item index="3" class="java.lang.String" itemvalue="Rake.routes: bmsom_rooms_bootstrap" />
+        <item index="4" class="java.lang.String" itemvalue="Rake.log:clear: bmsom_rooms_bootstrap" />
       </list>
     </recent_temporary>
   </component>
@@ -1229,13 +1230,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="653">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/reservations/_form_reservations.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="21" selection-start="868" selection-end="868" vertical-scroll-proportion="-12.774194" vertical-offset="0" max-vertical-offset="792">
@@ -1245,7 +1239,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="89" selection-start="2196" selection-end="2196" vertical-scroll-proportion="0.46469623" vertical-offset="575" max-vertical-offset="1452">
+        <state line="39" column="89" selection-start="2196" selection-end="2196" vertical-scroll-proportion="-9.129032" vertical-offset="575" max-vertical-offset="1452">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="41" selection-start="543" selection-end="543" vertical-scroll-proportion="0.43797857" vertical-offset="0" max-vertical-offset="653">
           <folding />
         </state>
       </provider>
