@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="24262f03-3ce4-4e34-bbaa-2f6d4f539b47" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Eylam\SkyDrive\Rails Projects\bmsom_rooms_bootstrap\db\migrate\20140413200415_remember.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="24262f03-3ce4-4e34-bbaa-2f6d4f539b47" name="Default" comment="" />
     <ignored path="bmsom_rooms_bootstrap.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
