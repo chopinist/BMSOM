@@ -106,6 +106,19 @@ en:
       remember: "Remember me"
     submit:
       sign-in: "Sign In"
+    recover:
+      title: "Recover your password"
+  recover_mail:
+    title: "BMSOM Room Reservation System - Password Recovery"
+    message: "please click the link in order to recover your password to"
+    reset: "Reset Password"
+    email: "Email"
+    subject: "BMSOM Room Reservation System Password Recovery"
+    no_email: "Email address doesn't exists"
+    email_sent: "An email with instruction of password reset successfully sent to "
+    confirmation:
+      no_token: "Your recovery token has been expired or doesn't exists"
+      password_reset_ok: ", your password was successfully reset to bmsom123"
   time:
     formats:
       custom: "%A"

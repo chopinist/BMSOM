@@ -1,19 +1,14 @@
 class ReservationsController < ApplicationController
-  before_action :set_user, :redirect_to_login
+  before_action :redirect_to_login, :set_user
+  before_action :restrict_user_access, :except => [:new]
 
   def index
     @reservations = @user.reservations.active_total
   end
 
-  def show
-  end
-
   def new
     @reservation = @user.reservations.build
     @rooms = Room.all.order("name ASC")
-  end
-
-  def edit
   end
 
   def create
@@ -80,6 +75,9 @@ class ReservationsController < ApplicationController
     end
 
     def set_user
-      @user = User.find(params[:user_id])
+      @user = User.find_by_id(params[:user_id])
+      if !@user
+        redirect_to new_user_reservation_path(session[:user_id] || cookies[:user_id])
+      end
     end
 end

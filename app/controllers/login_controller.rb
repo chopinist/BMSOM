@@ -1,8 +1,6 @@
 class LoginController < ApplicationController
   layout 'public'
 
-  before_action :redirect_to_login, :except => [:index, :logout, :login_attempt]
-
   def index
     if confirm_logged_in
       redirect_to new_user_reservation_path(session[:user_id] || cookies[:user_id])
@@ -30,6 +28,9 @@ class LoginController < ApplicationController
     end
   end
 
+  def recover
+  end
+
   def logout
     session[:user_id] = nil
     session[:username] = nil
@@ -48,6 +49,33 @@ class LoginController < ApplicationController
     end
 
     redirect_to(:action => 'index')
+  end
+
+  def confirm_link
+    recovery_token = PasswordRecoveryToken.find_by_recovery_token(params[:recovery_token])
+
+    if !recovery_token || recovery_token.created_at < Time.now - 10.minutes
+      flash.now[:error] = t("recover_mail.confirmation.no_token")
+    else
+      user = User.find(recovery_token.user_id)
+      user.update_attributes(:password => 'bmsom123', :password_confirmation => 'bmsom123')
+      recovery_token.destroy
+      flash.now[:notice] = user.username + t("recover_mail.confirmation.password_reset_ok")
+    end
+  end
+
+  def send_password
+    @user = User.find_by_email(params[:email])
+
+    if !@user
+      flash.now[:error] = t("recover_mail.no_email")
+      render 'recover'
+    else
+      UserMailer.recover_password(@user,params[:locale]).deliver
+      flash.now[:notice] = t("recover_mail.email_sent") + @user.email
+      render 'recover'
+    end
+
   end
 
 end

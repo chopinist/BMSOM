@@ -38,4 +38,24 @@ class ApplicationController < ActionController::Base
       end
     end
 
+    def confirm_admin
+      if User.find(session[:user_id] || cookies[:user_id]).admin
+        return true
+      else
+        return false
+      end
+    end
+
+    def restrict_user_access
+      if !confirm_admin && params[:user_id] != (session[:user_id].to_s || cookies[:user_id]).to_s
+        redirect_to new_user_reservation_path(session[:user_id] || cookies[:user_id])
+      end
+    end
+
+    def redirect_not_admin
+      unless confirm_admin
+        new_user_reservation_path(session[:user_id] || cookies[:user_id])
+      end
+    end
+
 end

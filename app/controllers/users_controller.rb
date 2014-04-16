@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  before_filter :redirect_not_admin, :only => [:edit, :update, :destroy]
+
   def index
     @users = User.all
   end
@@ -18,11 +20,9 @@ class UsersController < ApplicationController
   end
 
   def edit
-    @user = User.find(params[:id])
   end
 
   def update
-    @user = User.find(params[:id])
     if @user.update_attributes(safe_params)
       redirect_to(:action => 'index')
     else
@@ -31,12 +31,20 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    @user = User.find(params[:id]).destroy
+    @user.destroy
     redirect_to(:action => 'index')
   end
 
   private
-  def safe_params
-    params.require(:user).permit(:id, :email, :first_name, :last_name, :admin, :instrument, :username, :password, :password_confirmation)
-  end
+    def safe_params
+      params.require(:user).permit(:id, :email, :first_name, :last_name, :admin, :instrument,
+                                   :username, :password, :password_confirmation)
+    end
+
+    def set_user
+      @user = User.find_by_id(params[:id])
+      if !@user
+        redirect_to users_path
+      end
+    end
 end
