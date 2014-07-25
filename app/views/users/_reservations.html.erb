@@ -1,6 +1,6 @@
 <div id="reservations_container">
   <ul class="list-group">
-    <% @reservations.where(:time => date.beginning_of_day..date.end_of_day).uniq.pluck(:time).each do |time| %>
+    <% @reservations.where(:time => date.beginning_of_day..date.end_of_day).uniq.pluck(:time).order('cast(rooms.name as integer) asc').each do |time| %>
         <li class="list-group-item label-line-height">
             <span class="label label-success label-font-size"><%= time.strftime('%H:%M') %></span>
             <% @reservations.where(:time => time).each do |reservation| %>
