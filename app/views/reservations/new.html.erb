@@ -15,7 +15,7 @@
 
           <%= form_for ([@user, @reservation]), remote: true  do |f| %>
             <%= render(:partial => 'form_datetime', locals: { f: f }) %>
-            <%= render(:partial => 'form_notifications', locals: { f: f }) %>
+            <%= render(:partial => 'shared/notifications', locals: { f: f }) %>
             <%= render(:partial => 'form_rooms', locals: { f: f }) %>
           <% end %>
 
@@ -24,3 +24,4 @@
     </div>
   </div>
 </div>
+<%= javascript_include_tag 'reservations' %>

@@ -23,13 +23,14 @@ he:
   room:
     room_name: "שם החדר"
     contains_grand_piano: "מכיל פסנתר כנף"
-    blank_name_error: "יש למלא שם"
+    error: "יש לקרוא את פירוט השגיאות"
+    save: "שמירה"
   new_room:
     title: "הוספת חדר"
-    create: "הוספה"
+    success: "נוסף בהצלחה"
   edit_room:
     title: "עריכת חדר"
-    update: "עדכון"
+    success: "עודכן בהצלחה"
   rooms_index:
     title: "רשימת חדרים"
     yes_true: "כן"
@@ -42,22 +43,40 @@ he:
     first_name: "שם פרטי"
     last_name: "שם משפחה"
     username: "שם משתמש"
-    password: "ססמה"
+    password: "ססמה (ברירת מחדל 'bmsom123')"
     password_confirmation: "אימות ססמה"
     instrument: "כלי"
     email: "דואר אלקטרוני"
     admin: "מנהל מערכת"
+    error: "יש לקרוא את פירוט השגיאות"
+    save: "שמירה"
+    search:
+      label: "חיפוש"
+      placeholder: "יש להקליד כאן כדי למצוא משתמשים"
+      no_results: "אין תוצאות לחיפוש"
   new_user:
     title: "הוספת משתמש"
-    create: "הוספה"
+    success: "נוסף בהצלחה"
+    instrument_error: "כלי הנגינה יכול להיות אך ורק אחד מהבאים באיות מדויק: 'Piano','Strings','Wind','Singing','Other'"
+  multi_users:
+    plural: "משתמשים"
+    added: "נוספו בהצלחה"
+    updated: "עודכנו בהצלחה"
+    removed: "הוסרו בהצלחה"
+    row: "שורה"
+    details: "משתמש עם הפרטים"
+    add_error: "התרחשה שגיאה בהוספת המשתמש"
   edit_user:
-    title: "עריכת משתמש"
-    update: "עדכון"
+    title: "עריכת פרטים"
+    success: "עודכן בהצלחה"
+  delete_user:
+    success: "נמחק בהצלחה"
   users_index:
     title: "רשימת משתמשים"
     new_user: "הוספת משתמש חדש"
     edit_user: "עריכה"
     delete_user: "מחיקה"
+    user_reservations: "הזמנות"
   instruments:
     piano: "פסנתר"
     strings: "כלי מיתר"
@@ -89,13 +108,22 @@ he:
     error_no_id: "ההזמנה אינה קיימת"
     no_reservations: "אין הזמנות כעת"
     remove_time: "ניתן לבטל הזמנה עד כ-3 שעות לפני זמנה"
+  todays_reservations:
+    title: "ההזמנות לתאריך"
   topbar:
     my_reservations: "ההזמנות שלי"
+    reservations_table: "טבלת ההזמנות"
     settings: "הגדרות"
     account: "חשבון"
     logout: "התנתקות"
     new_reservation: "הזמנה חדשה"
     forgot: "שכחתי את הססמה"
+    management:
+      title: "ניהול"
+      rooms: "ניהול חדרים"
+      users: "ניהול משתמש יחיד"
+      users_table: "ניהול משתמשים בטבלה"
+      click_to_admin: "מעבר לפאנל ניהול"
   login:
     title: "התחברות"
     labels:
@@ -106,6 +134,7 @@ he:
       sign-in: "התחברות"
     recover:
       title: "שחזור ססמה"
+    wrong_details: "הפרטים שגויים"
   recover_mail:
     title: "מערכת להזמנת חדרים - איפוס ססמה"
     message: "יש ללחוץ על הלינק כדי לשחזר את ססמתך לססמה"
@@ -113,6 +142,7 @@ he:
     email: "דואר אלקטרוני"
     subject: "איפוס ססמת מערכת הזמנת חדרים"
     no_email: "כתובת דואר אלקטרוני אינה קיימת במערכת"
+    already_sent: "הודעה אישור כבר נשלחה"
     email_sent: "הודעה עם הוראות לאיפוס ססמה נשלחה בהצלחה לכתובת "
     confirmation:
       no_token: "קוד איפוס הססמה שלך אינו קיים או שאינו תקף"
@@ -220,7 +250,7 @@ he:
     messages:
       accepted: חייב באישור
       blank: לא יכול להיות ריק
-      confirmation: לא תואם לאישורו
+      confirmation: אינו תואם
       empty: לא יכול להיות ריק
       equal_to: חייב להיות שווה ל- %{count}
       even: חייב להיות זוגי
@@ -236,8 +266,8 @@ he:
       odd: חייב להיות אי זוגי
       record_invalid: ! 'האימות נכשל: %{errors}'
       taken: כבר בשימוש
-      too_long: "יותר מדי ארוך (לא יותר מ- %{count} תווים)"
-      too_short: "יותר מדי קצר (לא פחות  מ- %{count} תווים)"
+      too_long: "יש יותר מדי תווים (לא יותר מ- %{count} תווים)"
+      too_short: "אין מספיק תווים (לא פחות  מ- %{count} תווים)"
       wrong_length: "לא באורך הנכון (חייב להיות %{count} תווים)"
     template:
       body: ! 'אנא בדוק את השדות הבאים:'
@@ -312,3 +342,15 @@ he:
       il_date: ! '%d/%m/%Y'
       il_date_words: ! '%d ב%B, %Y'
     pm: pm
+  will_paginate:
+    previous_label: "דף קודם"
+    next_label: "דף הבא"
+  activerecord:
+    attributes:
+      user:
+        first_name: "שם פרטי"
+        last_name: "שם משפחה"
+        email: "דואר אלקטרוני"
+        instrument: "כלי נגינה"
+        id: "מזהה"
+        username: "שם משתמש"

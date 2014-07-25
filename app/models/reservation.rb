@@ -9,10 +9,10 @@ class Reservation < ActiveRecord::Base
   validate :limit_quantity
   validate :can_reserve_with_grand_piano
 
-  scope :total, lambda { where(:time => DateTime.now.beginning_of_day..6.days.from_now.end_of_day) }
-  scope :active_total, lambda { where(:time => DateTime.now.beginning_of_hour..6.days.from_now.end_of_day) }
-  scope :active_today, lambda { where(:time => DateTime.now.beginning_of_hour..DateTime.now.end_of_day) }
-  scope :for_today, lambda { where(:time => DateTime.now.beginning_of_day..DateTime.now.end_of_day) }
+  scope :total, lambda {where(:time => DateTime.now.beginning_of_day..6.days.from_now.end_of_day).order(:time)}
+  scope :active_total, lambda {where(:time => DateTime.now.beginning_of_hour..6.days.from_now.end_of_day).order(:time)}
+  scope :active_today, lambda {where(:time => DateTime.now.beginning_of_hour..DateTime.now.end_of_day).order(:time)}
+  scope :for_today, lambda {where(:time => DateTime.now.beginning_of_day..DateTime.now.end_of_day).order(:time)}
 
   def limit_quantity
     if !self.user.admin

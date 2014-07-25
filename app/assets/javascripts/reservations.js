@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    $("#show_rooms").hide();
+
     var opts = {
         lines: 10, // The number of lines to draw
         length: 4, // The length of each line
@@ -41,6 +43,7 @@ $(document).ready(function () {
     $('#new_reservation').on('ajax:success', function(event, data, status, xhr) {
         $("#titleSpinner").hide();
     });
+
 
     $("body").on("click", ":button:focus:not(#navbar-toggle)", function(){
         var room = $(":button:focus").text().trim();

@@ -3,7 +3,7 @@
   <div class="col-md-6">
     <div class="panel panel-primary radius">
       <div class="panel-heading">
-        <h1 class="panel-title text-center" id="reservations_title"><%= t "login.recover.title" %>:
+        <h1 class="panel-title text-center" id="reservations_title"><span class="glyphicon glyphicon glyphicon-refresh"></span> <%= t "login.recover.title" %>:
           <span class="spinner"
                 style="display: none; position: relative; top:4px; left:<%= params[:locale]=="en" ? "2px;" : "4px;" %>"
                 id="titleSpinner">
@@ -13,7 +13,7 @@
       <div class="panel-body">
         <div class="col-md-12">
           <%= form_tag(:action => 'send_password') do %>
-            <%= render 'form_notifications' %>
+            <%= render 'shared/notifications' %>
             <%= render 'form_recover_password' %>
             <div class="text-center">
               <%= submit_tag(t("recover_mail.reset"), :class => 'btn btn-primary radius btn-lg') %>

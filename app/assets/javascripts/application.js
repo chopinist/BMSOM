@@ -12,11 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require spin.min
 //= require bootstrap
-
-$(document).ready(function () {
-
-    $("#show_rooms").hide();
-
-});
+//= require jquery.handsontable.full
+//= require jquery.handsontable.removeRow

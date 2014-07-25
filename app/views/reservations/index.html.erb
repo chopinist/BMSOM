@@ -11,11 +11,12 @@
         </h1>
       </div>
       <div class="panel-body">
-        <div class="col-md-12">
-          <%= render(:partial => 'form_notifications') %>
+        <div class="col-md-12" id="reservation_index">
+          <%= render(:partial => 'shared/notifications') %>
           <%= render(:partial => 'form_reservations') %>
         </div>
       </div>
     </div>
   </div>
 </div>
+<%= javascript_include_tag 'reservations_index' %>

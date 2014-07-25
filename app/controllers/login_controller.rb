@@ -1,6 +1,8 @@
 class LoginController < ApplicationController
   layout 'public'
 
+  #TODO: When login, if password is in cookie renew the hash
+
   def index
     if confirm_logged_in
       redirect_to new_user_reservation_path(session[:user_id] || cookies[:user_id])
@@ -24,6 +26,7 @@ class LoginController < ApplicationController
       session[:username] = authorized_user.username
       redirect_to new_user_reservation_path(session[:user_id])
     else
+      flash[:error] = t("login.wrong_details")
       redirect_to(:action => 'index')
     end
   end
@@ -69,6 +72,9 @@ class LoginController < ApplicationController
 
     if !@user
       flash.now[:error] = t("recover_mail.no_email")
+      render 'recover'
+    elsif @user.password_recovery_tokens.active.count > 0
+      flash.now[:error] = t("recover_mail.already_sent")
       render 'recover'
     else
       UserMailer.recover_password(@user,params[:locale]).deliver

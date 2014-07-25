@@ -23,13 +23,16 @@ en:
   room:
     room_name: "Room Name"
     contains_grand_piano: "Contains Grand Piano"
-    blank_name_error: "Name is required"
+    error: "Review the errors below"
+    save: "Save"
   new_room:
     title: "Create Room"
-    create: "Create"
+    success: "was successfully added"
   edit_room:
     title: "Edit Room"
-    update: "Update"
+    success: "was successfully updated"
+  delete_user:
+    success: "successfully deleted"
   rooms_index:
     title: "Rooms List"
     yes_true: "Yes"
@@ -43,23 +46,39 @@ en:
     first_name: "First Name"
     last_name: "Last Name"
     username: "Username"
-    password: "Password"
+    password: "Password (Default is 'bmsom123')"
     password_confirmation: "Password Confirmation"
     instrument: "Instrument"
     email: "Email"
     admin: "Admin"
+    error: "Review the errors below"
+    save: "Save"
+    search:
+      label: "Search"
+      placeholder: "Type here to find users"
+      no_results: "There are no results"
   new_user:
     title: "Create User"
-    create: "Create"
+    success: "was successfully added"
+    instrument_error: "Instrument must be exactly one of the following: 'Piano','Strings','Wind','Singing','Other'"
+  multi_users:
+    plural: "users"
+    added: "were successfully added"
+    updated: "were successfully updated"
+    removed: "were successfully removed"
+    row: "Row"
+    details: "User with details"
+    add_error: "Could not add the following user"
   edit_user:
-    title: "Edit User"
-    update: "Edit"
+    title: "Edit Details"
+    success: "was successfully updated"
   users_index:
     title: "Users List"
     actions: "Actions"
     new_user: "Add New User"
     edit_user: "Edit"
     delete_user: "Delete"
+    user_reservations: "Reservations"
   instruments:
     piano: "Piano"
     strings: "Strings"
@@ -91,13 +110,22 @@ en:
     error_no_id: "Reservation doesn't exists"
     no_reservations: "Currently there are no reservations"
     remove_time: "You can remove a reservation up to 3 hours before its time"
+  todays_reservations:
+    title: "Reservations for"
   topbar:
     my_reservations: "My Reservations"
+    reservations_table: "Reservations Table"
     settings: "Settings"
     account: "Account"
     logout: "Logout"
     new_reservation: "New Reservation"
     forgot: "Forgot my password"
+    management:
+      title: "Management"
+      rooms: "Room Management"
+      users: "Single User Management"
+      users_table: "User Table Management"
+      click_to_admin: "Go to admin panel"
   login:
     title: "Sign in"
     labels:
@@ -108,6 +136,7 @@ en:
       sign-in: "Sign In"
     recover:
       title: "Recover your password"
+    wrong_details: "You have entered wrong details"
   recover_mail:
     title: "BMSOM Room Reservation System - Password Recovery"
     message: "please click the link in order to recover your password to"
@@ -115,6 +144,7 @@ en:
     email: "Email"
     subject: "BMSOM Room Reservation System Password Recovery"
     no_email: "Email address doesn't exists"
+    already_sent: "A confirmation email has already been sent"
     email_sent: "An email with instruction of password reset successfully sent to "
     confirmation:
       no_token: "Your recovery token has been expired or doesn't exists"
@@ -124,4 +154,14 @@ en:
       custom: "%A"
       il_date: '%d/%m/%Y'
       il_date_words: '%d %B, %Y'
+  activerecord:
+    attributes:
+      user:
+        password: "Password"
+    errors:
+      models:
+        user:
+          attributes:
+            password:
+              blank: "is required"
 

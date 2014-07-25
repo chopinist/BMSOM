@@ -8,10 +8,8 @@
       <div class="panel-body">
         <div class="col-md-1"></div>
         <div class="col-md-11">
-          <%= form_for @room do |f| %>
-            <%= render(:partial => "form", :locals => {:f => f}) %>
-            <%= submit_tag(t("new_room.create"), :class => 'btn btn-primary radius') %>
-          <% end %>
+          <%= render(:partial => 'shared/notifications') %>
+          <%= render(:partial => 'form') %>
         </div>
       </div>
     </div>

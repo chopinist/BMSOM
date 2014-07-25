@@ -1,6 +1,8 @@
 class ReservationsController < ApplicationController
-  before_action :redirect_to_login, :set_user
-  before_action :restrict_user_access, :except => [:new]
+  before_filter :redirect_to_login, :set_user
+  before_filter :restrict_user_access, :except => [:new]
+
+  #TODO: Option for admin to reserve for other users
 
   def index
     @reservations = @user.reservations.active_total

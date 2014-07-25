@@ -1,17 +1,18 @@
 <div class="row">
   <div class="col-md-3"></div>
   <div class="col-md-6">
-    <%= link_to(t("rooms_index.new_room"), new_room_path, :class => 'btn btn-success btn-lg radius') %><br/><br/>
+    <div class="text-center">
+      <%= link_to(t("rooms_index.new_room"), new_room_path, :class => 'btn btn-success btn-lg radius') %><br/><br/>
+    </div>
     <div class="panel panel-primary radius">
       <div class="panel-heading">
         <h1 class="panel-title text-center"><span class="glyphicon glyphicon-home"></span> <%= t "rooms_index.title" %>:</h1>
       </div>
       <div class="panel-body">
-
         <% @rooms.each do |room| %>
 
-            <div class="btn-group">
-              <button type="button" class="btn btn-primary radius dropdown-toggle" data-toggle="dropdown">
+            <div class="btn-group btn-top-spacing btn-fixed-width">
+              <button type="button" class="btn btn-primary radius dropdown-toggle btn-lg btn-block" data-toggle="dropdown">
                 <%= room.name %> <span class="caret"></span>
               </button>
               <ul class="dropdown-menu" role="menu">
@@ -20,8 +21,8 @@
               </ul>
             </div>
 
-            </ul>
         <% end %>
+        </div>
       </div>
     </div>
   </div>

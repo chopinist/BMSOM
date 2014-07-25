@@ -1,9 +1,17 @@
-<div class="form-group">
-    <%= f.label(:name,t("room.room_name")) %>
-    <%= f.text_field(:name, :class => "form-control radius") %>
-</div>
+<div class="form-group" id="room_container">
+  <%= form_for @room, remote: true do |f| %>
+    <div class="form-group">
+        <%= f.label(:name,t("room.room_name")) %>
+        <%= f.text_field(:name, :class => "form-control radius") %>
+    </div>
 
-<div class="checkbox">
-    <%= f.check_box(:contains_grand_piano) %>
-    <%= f.label(:contains_grand_piano, t("room.contains_grand_piano") + "? " ) %>
+    <div class="checkbox">
+        <%= f.check_box(:contains_grand_piano) %>
+        <%= f.label(:contains_grand_piano, t("room.contains_grand_piano") + "? " ) %>
+    </div>
+
+    <div class="text-center">
+      <%= submit_tag(t("room.save"), :class => 'btn btn-primary radius') %>
+    </div>
+  <% end %>
 </div>

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
-  <link href='http://fonts.googleapis.com/css?family=Raleway:400,800' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/earlyaccess/alefhebrew.css' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -25,7 +25,7 @@
         <span class="sr-only">Toggle navigation</span>
         <span class="glyphicon glyphicon-th-large white"></span>
       </button>
-      <a class="navbar-brand" href="#">BMSOM Rooms <span class="glyphicon glyphicon-music"></span></a>
+      <%= link_to(image_tag('logo.png'),root_path,:class => 'navbar-brand') %>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->

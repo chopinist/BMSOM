@@ -41,6 +41,10 @@ gem 'bcrypt-ruby', ENV["RAILS_ENV"] == "production" ? '~> 3.0.1' : '~> 3.1.0'
 
 gem 'nokogiri'
 
+gem 'will_paginate'
+
+gem 'activerecord-session_store', github: 'rails/activerecord-session_store'
+
 # Use unicorn as the app server
 # gem 'unicorn'
 

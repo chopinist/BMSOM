@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
-  <link href='http://fonts.googleapis.com/css?family=Raleway:400,800' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/earlyaccess/alefhebrew.css' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -25,7 +25,7 @@
         <span class="sr-only">Toggle navigation</span>
         <span class="glyphicon glyphicon-th-large white"></span>
       </button>
-      <a class="navbar-brand" href="#">BMSOM Rooms <span class="glyphicon glyphicon-music"></span></a>
+      <%= link_to(image_tag('logo.png'),root_path,:class => 'navbar-brand') %>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -35,15 +35,33 @@
         <li <%= params[:locale]=="he" ? raw('class="active"') : '' %>><%= link_to "עברית", :locale => 'he' %></li>
       </ul>
 
+      <% user = User.find_by_id(params[:user_id]) %>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="<%= user_reservations_path(session[:user_id] || cookies[:user_id]) %>"><span class="glyphicon glyphicon-home"></span> <%= t("topbar.my_reservations") %></a></li>
-        <li><a href="<%= new_user_reservation_path(session[:user_id] || cookies[:user_id]) %>"><span class="glyphicon glyphicon-plus"></span> <%= t("topbar.new_reservation") %></a></li>
+        <li><a href="<%= users_path + '/reservations' %>"><span class="glyphicon glyphicon-list"></span> <%= t("topbar.reservations_table") %></a></li>
+        <li><a href="<%= user_reservations_path(params[:user_id] || session[:user_id] || cookies[:user_id]) %>"><span class="glyphicon glyphicon-list-alt"></span> <%= t("topbar.my_reservations") %></a></li>
+        <li><a href="<%= new_user_reservation_path(params[:user_id] || session[:user_id] || cookies[:user_id]) %>"><span class="glyphicon glyphicon-plus"></span> <%= t("topbar.new_reservation") %></a></li>
+        <% if @admin %>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span> <%= t("topbar.management.title") %> <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="<%= users_path %>"><span class="glyphicon glyphicon-user"></span> <%= t("topbar.management.users") %></a></li>
+                <li class="divider"></li>
+                <li><a href="<%= users_path + '/manage' %>"><span class="glyphicon glyphicon-list-alt"></span> <%= t("topbar.management.users_table") %></a></li>
+                <li class="divider"></li>
+                <li><a href="<%= rooms_path %>"><span class="glyphicon glyphicon-home"></span> <%= t("topbar.management.rooms") %></a></li>
+              </ul>
+            </li>
+        <% end %>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span> <%= t("topbar.account") %> <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="#"><%= t("topbar.settings") %></a></li>
+            <li><a href="<%= edit_user_path(session[:user_id] || cookies[:user_id]) %>">
+                <span class="glyphicon glyphicon-wrench"></span>
+                <%= t("topbar.settings") %></a></li>
             <li class="divider"></li>
-            <li><%= link_to(t("topbar.logout"), {:controller => 'login', :action => 'logout'}) %></a></li>
+            <li><a href="<%= url_for({:controller => 'login', :action => 'logout'}) %>">
+              <span class="glyphicon glyphicon-off"></span>
+              <%= t("topbar.logout") %></a></li>
           </ul>
         </li>
       </ul>

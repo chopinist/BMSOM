@@ -29,7 +29,7 @@ module BmsomRoomsBootstrap
           html = %(<div class="clearfix has-error">#{e}</div>).html_safe
         elsif e.node_name.eql? 'input'
           if instance.error_message.kind_of?(Array)
-            html = %(<div class="clearfix has-error">#{html_tag}<span class="help-inline">&nbsp;#{instance.error_message.join(',')}</span></div>).html_safe
+            html = %(<div class="clearfix has-error">#{html_tag}<span class="help-inline">&nbsp;#{instance.error_message.join('; ')}</span></div>).html_safe
           else
             html = %(<div class="clearfix has-error">#{html_tag}<span class="help-inline">&nbsp;#{instance.error_message}</span></div>).html_safe
           end
@@ -39,7 +39,6 @@ module BmsomRoomsBootstrap
     end
 
     config.time_zone = 'Jerusalem'
-
 
   end
 end

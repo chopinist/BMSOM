@@ -37,4 +37,15 @@ module ReservationsHelper
 
     return arr
   end
+
+  def today_not_weekend
+    today = Time.now
+    if today.friday?
+      today += 2.days
+    elsif today.saturday?
+      today += 1.days
+    end
+
+    return today
+  end
 end

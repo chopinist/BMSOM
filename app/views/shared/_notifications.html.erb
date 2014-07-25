@@ -3,9 +3,16 @@
       <% if !flash[:notice].blank? %>
           <div class="alert alert-success radius">
             <span class="glyphicon glyphicon-ok-sign"></span>
-            <%= flash.now[:notice] %>
+            <%= flash.now[:notice].html_safe %>
           </div>
-      <% elsif !flash.now[:error].blank? %>
+      <% end %>
+      <% if !flash[:warning].blank? %>
+          <div class="alert alert-warning radius">
+            <span class="glyphicon glyphicon-exclamation-sign"></span>
+            <%= flash.now[:warning].html_safe %>
+          </div>
+      <% end %>
+      <% if !flash.now[:error].blank? %>
           <div class="alert alert-danger radius">
             <span class="glyphicon glyphicon-remove-sign"></span>
             <%= flash.now[:error].html_safe %>

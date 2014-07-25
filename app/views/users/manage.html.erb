@@ -1,0 +1,160 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-primary radius">
+      <div class="panel-heading">
+        <h1 class="panel-title text-center"><%= t "new_user.title" %>:
+
+        </h1>
+      </div>
+      <div class="panel-body" id="panel">
+        <div class="col-md-12">
+          <%= render 'shared/notifications' %>
+          <div class="text-center">
+              <div id="dataTable" class="text-center" style="overflow: scroll; direction: ltr"></div>
+          </div>
+          <script>
+              $(document).ready(function () {
+                  function strip_tags(input, allowed) {
+                      allowed = (((allowed || "") + "").toLowerCase().match(/<[a-z][a-z0-9]*>/g) || []).join(''); // making sure the allowed arg is a string containing only tags in lowercase (<a><b><c>)
+                      var tags = /<\/?([a-z][a-z0-9]*)\b[^>]*>/gi;
+                      return input.replace(tags, function ($0, $1) {
+                          return allowed.indexOf('<' + $1.toLowerCase() + '>') > -1 ? $0 : '';
+                      });
+                  }
+
+                  var data = [
+                      <% @users.each do |user| %>
+                      <%= user != @users.last ? raw(user.to_hash) + ',' : raw(user.to_hash) %>
+                      <% end %>
+                  ];
+
+                  var config = {
+                      data: data,
+                      minSpareRows: 1,
+                      colHeaders: ['First name', 'Last name', 'Instrument', 'E-mail'],
+                      rowHeaders: true,
+                      outsideClickDeselects: false,
+                      removeRowPlugin: true,
+                      columns: [
+                          {data: "first_name", type: 'text'},
+                          {data: "last_name", type: 'text'},
+                          {data: "instrument", type: 'text', editor: 'select', selectOptions: ["Piano", "Strings", "Harp", "Percussion"]},
+                          {data: "email", type: 'text'}
+                      ],
+                      beforeChange: function (changes, source) {
+                          for (var i = changes.length - 1; i >= 0; i--) {
+                              if ((changes[i][1] === 'first_name' || changes[i][1] === 'last_name') && changes[i][3].charAt(0)) {
+                                  changes[i][3] = changes[i][3].charAt(0).toUpperCase() + changes[i][3].slice(1); //capitalise first letter in column 1 and 2
+                              }
+                          }
+                      }
+                  };
+
+                  var hooks = Handsontable.PluginHooks.hooks;
+                  for (var hook in hooks) {
+                      if (hooks.hasOwnProperty(hook)) {
+                          config[hook] = (function (hook) {
+                              return function () {
+                                  log_events(hook, arguments);
+                              }
+                          })(hook);
+                      }
+                  }
+
+                  function log_events(event, data) {
+                    if(event == 'afterChange' || event == 'beforeChange')
+                    {
+                        var vals = [
+                            "[" + event + "]" + data
+                        ];
+
+                        var str;
+                        for (var d = 0; d < data.length; d++) {
+                            try {
+                                str = JSON.stringify(data[d]);
+                            }
+                            catch (e) {
+                                str = data[d].toString(); //JSON.stringify breaks on circular reference to a HTML node
+                            }
+
+                            if (str === void 0) {
+                                continue;
+                            }
+
+                            if (str.length > 20) {
+                                str = data[d].toString();
+                            }
+                            if (d < data.length - 1) {
+                                str += ',';
+                            }
+                            vals.push(str);
+                        }
+                    }
+                  }
+
+                  var container = $("#dataTable");
+
+                  container.handsontable(config);
+
+                  var parent = container.parent();
+                  var handsontable = container.data('handsontable');
+
+                  $('#save').click(function () {
+                      $.ajax({
+                          url: "<%= users_path %>/handle_table",
+                          data: {"data": handsontable.getData()}, //returns all cells' data
+                          dataType: 'html',
+                          type: 'POST',
+                          beforeSend: function () {
+                              $(":button:not(#navbar-toggle)").attr("disabled", true);
+                              $("#titleSpinner").show();
+                                  var opts = {
+                                      lines: 10, // The number of lines to draw
+                                      length: 60, // The length of each line
+                                      width: 60, // The line thickness
+                                      radius: 80, // The radius of the inner circle
+                                      corners: 1, // Corner roundness (0..1)
+                                      rotate: 0, // The rotation offset
+                                      direction: 1, // 1: clockwise, -1: counterclockwise
+                                      color: '#70AEF4', // #rgb or #rrggbb or array of colors
+                                      speed: 1.5, // Rounds per second
+                                      trail: 60, // Afterglow percentage
+                                      shadow: false, // Whether to render a shadow
+                                      hwaccel: false, // Whether to use hardware acceleration
+                                      className: 'spinner', // The CSS class to assign to the spinner
+                                      zIndex: 2e9, // The z-index (defaults to 2000000000)
+                                      top: 'auto', // Top position relative to parent in px
+                                      left: 'auto' // Left position relative to parent in px
+                                  };
+
+                              if ( $("#titleSpinner").children().length == 0 ) {
+                                  var target = document.getElementById('titleSpinner');
+                                  var spinner = new Spinner(opts).spin(target);
+                              }
+                          },
+                          success: function (res) {
+                            $('#panel').replaceWith($(res).find("#panel"));
+
+                          },
+                          error: function (res) {
+                              $('body').html((JSON.stringify(res).replace(/\\/g, '')));
+                          },
+                          complete: function () {
+                              $("#titleSpinner").hide();
+                          }
+
+                      });
+                  });
+
+              });
+          </script>
+          <br/>
+          <div class="text-center">
+            <%= button_tag("Save", :class => 'btn btn-primary radius btn-lg', id: 'save') %>
+            <span class="spinner" id="titleSpinner" style="position:fixed;top:50%;left:50%"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

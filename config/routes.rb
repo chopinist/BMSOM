@@ -1,5 +1,8 @@
 BmsomRoomsBootstrap::Application.routes.draw do
 
+  #TODO: Remember locale in a cookie
+  #TODO: Fix url root
+
   scope ":locale", locale: /#{I18n.available_locales.join("|")}/ do
 
     resources :rooms, except: [:show, :delete]
@@ -11,12 +14,12 @@ BmsomRoomsBootstrap::Application.routes.draw do
     post ':controller(/:action(/:id(.:format)))'
     get ':controller(/:action(/:id(.:format)))'
 
-    root :to => 'login#index', :as => :root_with_locale
+    root to: 'login#index', :as => :root_with_locale
   end
 
   get '*path', to: redirect("/#{I18n.locale}/%{path}"), constraints: lambda { |req| !req.path.starts_with? "/#{I18n.default_locale}/" }
 
-  root  'login#index'
+  root to: 'login#index', locale: 'en'
 
   get '*path' => redirect("/#{I18n.default_locale}", status: 302)
 

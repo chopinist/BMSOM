@@ -1,0 +1,21 @@
+<div id="reservations_container">
+  <ul class="list-group">
+    <% @reservations.where(:time => date.beginning_of_day..date.end_of_day).uniq.pluck(:time).each do |time| %>
+        <li class="list-group-item label-line-height">
+            <span class="label label-success label-font-size"><%= time.strftime('%H:%M') %></span>
+            <% @reservations.where(:time => time).each do |reservation| %>
+            <span style="display: inline-block">
+              <span class="label label-primary label-font-size" >
+                <%= reservation.room.name %>
+              </span>
+              <span class="label-padding" style="display: inline-block">
+                <%= reservation.user.first_name %> <%= reservation.user.last_name %>
+              </span>
+            </span>
+
+            <% end %>
+        </li>
+    <% end %>
+  </ul>
+</div>
+
