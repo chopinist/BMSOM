@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140724060618) do
+ActiveRecord::Schema.define(version: 20140725174353) do
 
   create_table "password_recovery_tokens", force: true do |t|
     t.integer  "user_id"
