@@ -16,7 +16,7 @@ class UsersController < ApplicationController
 
   def reservations
     @rooms = Room.all
-    @reservations = Reservation.active_total.joins(:room).order('(rooms.name * 1) asc')
+    @reservations = Reservation.active_total.joins(:room).order('CAST(SUBSTRING(rooms.name,LOCATE(' ',rooms.name)+1) AS SIGNED)')
   end
 
   def manage
