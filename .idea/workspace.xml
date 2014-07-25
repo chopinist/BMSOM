@@ -41,7 +41,7 @@
       <file leaf-file-name="users_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="18" selection-start="952" selection-end="952" vertical-scroll-proportion="0.7789634" vertical-offset="127" max-vertical-offset="4290">
+            <state line="18" column="80" selection-start="787" selection-end="787" vertical-scroll-proportion="0.30945122" vertical-offset="193" max-vertical-offset="4290">
               <folding />
             </state>
           </provider>
@@ -74,19 +74,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reservations.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/users/reservations.html.erb">
+      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="18" selection-start="141" selection-end="158" vertical-scroll-proportion="-2.8387096" vertical-offset="0" max-vertical-offset="528">
+            <state line="14" column="56" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1144">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <file leaf-file-name="_reservations.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/users/_reservations.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="56" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1144">
+            <state line="10" column="35" selection-start="618" selection-end="618" vertical-scroll-proportion="-7.096774" vertical-offset="0" max-vertical-offset="594">
               <folding />
             </state>
           </provider>
@@ -1037,7 +1037,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1250,11 +1250,6 @@
         <state line="42" column="0" selection-start="1598" selection-end="1632" vertical-scroll-proportion="0.0" vertical-offset="462" max-vertical-offset="1122" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/_reservations.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="35" selection-start="618" selection-end="618" vertical-scroll-proportion="0.0" vertical-offset="220" max-vertical-offset="594" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/reservations/_form_rooms.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="663" selection-end="1288" vertical-scroll-proportion="0.0" vertical-offset="352" max-vertical-offset="858" />
@@ -1375,9 +1370,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/_reservations.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="35" selection-start="618" selection-end="618" vertical-scroll-proportion="-7.096774" vertical-offset="0" max-vertical-offset="594">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="18" selection-start="952" selection-end="952" vertical-scroll-proportion="0.7789634" vertical-offset="127" max-vertical-offset="4290">
+        <state line="18" column="80" selection-start="787" selection-end="787" vertical-scroll-proportion="0.30945122" vertical-offset="193" max-vertical-offset="4290">
           <folding />
         </state>
       </provider>
