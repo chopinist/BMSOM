@@ -16,7 +16,7 @@ class UsersController < ApplicationController
 
   def reservations
     @rooms = Room.all
-    @reservations = Reservation.active_total.joins(:room).order('CAST(rooms.name AS DECIMAL(10,2))')
+    @reservations = Reservation.active_total.joins(:room).order('cast(rooms.name as integer) asc')
   end
 
   def manage
