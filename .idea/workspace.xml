@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24262f03-3ce4-4e34-bbaa-2f6d4f539b47" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/_reservations.html.erb" afterPath="$PROJECT_DIR$/app/views/users/_reservations.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bmsom_rooms_bootstrap.iws" />
@@ -25,6 +23,7 @@
     <SUITE FILE_PATH="coverage/bmsom_rooms_bootstrap@db_rollback__bmsom_rooms_bootstrap.coverage" NAME="db:rollback: bmsom_rooms_bootstrap Coverage Results" MODIFIED="1394283496341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bmsom_rooms_bootstrap" />
     <SUITE FILE_PATH="coverage/bmsom_rooms_bootstrap@test__bmsom_rooms_bootstrap.coverage" NAME="test: bmsom_rooms_bootstrap Coverage Results" MODIFIED="1398598744370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bmsom_rooms_bootstrap" />
     <SUITE FILE_PATH="coverage/bmsom_rooms_bootstrap@routes__bmsom_rooms_bootstrap.coverage" NAME="routes: bmsom_rooms_bootstrap Coverage Results" MODIFIED="1397593072505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bmsom_rooms_bootstrap" />
+    <SUITE FILE_PATH="coverage/bmsom_rooms_bootstrap@assets_precompile__bmsom_rooms_bootstrap.coverage" NAME="assets:precompile: bmsom_rooms_bootstrap Coverage Results" MODIFIED="1406392313363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bmsom_rooms_bootstrap" />
     <SUITE FILE_PATH="coverage/bmsom_rooms_bootstrap@notes_todo__bmsom_rooms_bootstrap.coverage" NAME="notes:todo: bmsom_rooms_bootstrap Coverage Results" MODIFIED="1406209940829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bmsom_rooms_bootstrap" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -771,29 +770,7 @@
       <recent name="C:\Users\Eylam\SkyDrive\Rails Projects\bmsom_rooms_bootstrap\app\views\shared" />
     </key>
   </component>
-  <component name="RunManager" selected="Rails.Development: bmsom_rooms_bootstrap">
-    <configuration default="false" name="routes: bmsom_rooms_bootstrap" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
-      <module name="bmsom_rooms_bootstrap" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="routes" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Rake.assets:precompile: bmsom_rooms_bootstrap">
     <configuration default="false" name="log:clear: bmsom_rooms_bootstrap" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
       <module name="bmsom_rooms_bootstrap" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -872,6 +849,28 @@
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="notes:todo" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="assets:precompile: bmsom_rooms_bootstrap" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="bmsom_rooms_bootstrap" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="assets:precompile" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
@@ -1014,19 +1013,19 @@
       <item index="1" class="java.lang.String" itemvalue="Rake.spec: bmsom_rooms_bootstrap" />
       <item index="2" class="java.lang.String" itemvalue="Rails.Production: bmsom_rooms_bootstrap" />
       <item index="3" class="java.lang.String" itemvalue="Rails.Development: bmsom_rooms_bootstrap" />
-      <item index="4" class="java.lang.String" itemvalue="Rake.routes: bmsom_rooms_bootstrap" />
-      <item index="5" class="java.lang.String" itemvalue="Rake.log:clear: bmsom_rooms_bootstrap" />
-      <item index="6" class="java.lang.String" itemvalue="IRB console.Rails console: bmsom_rooms_bootstrap" />
-      <item index="7" class="java.lang.String" itemvalue="Rake.db:migrate: bmsom_rooms_bootstrap" />
-      <item index="8" class="java.lang.String" itemvalue="Rake.notes:todo: bmsom_rooms_bootstrap" />
+      <item index="4" class="java.lang.String" itemvalue="Rake.log:clear: bmsom_rooms_bootstrap" />
+      <item index="5" class="java.lang.String" itemvalue="IRB console.Rails console: bmsom_rooms_bootstrap" />
+      <item index="6" class="java.lang.String" itemvalue="Rake.db:migrate: bmsom_rooms_bootstrap" />
+      <item index="7" class="java.lang.String" itemvalue="Rake.notes:todo: bmsom_rooms_bootstrap" />
+      <item index="8" class="java.lang.String" itemvalue="Rake.assets:precompile: bmsom_rooms_bootstrap" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Rake.notes:todo: bmsom_rooms_bootstrap" />
-        <item index="1" class="java.lang.String" itemvalue="Rake.db:migrate: bmsom_rooms_bootstrap" />
-        <item index="2" class="java.lang.String" itemvalue="IRB console.Rails console: bmsom_rooms_bootstrap" />
-        <item index="3" class="java.lang.String" itemvalue="Rake.log:clear: bmsom_rooms_bootstrap" />
-        <item index="4" class="java.lang.String" itemvalue="Rake.routes: bmsom_rooms_bootstrap" />
+        <item index="0" class="java.lang.String" itemvalue="Rake.assets:precompile: bmsom_rooms_bootstrap" />
+        <item index="1" class="java.lang.String" itemvalue="Rake.notes:todo: bmsom_rooms_bootstrap" />
+        <item index="2" class="java.lang.String" itemvalue="Rake.db:migrate: bmsom_rooms_bootstrap" />
+        <item index="3" class="java.lang.String" itemvalue="IRB console.Rails console: bmsom_rooms_bootstrap" />
+        <item index="4" class="java.lang.String" itemvalue="Rake.log:clear: bmsom_rooms_bootstrap" />
       </list>
     </recent_temporary>
   </component>
@@ -1041,7 +1040,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38859555" sideWeight="0.5921875" order="10" side_tool="false" content_ui="tabs" />
@@ -1052,7 +1051,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39915523" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3336853" sideWeight="0.090625" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3336853" sideWeight="0.909375" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3336853" sideWeight="0.909375" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
