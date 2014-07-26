@@ -15,20 +15,8 @@ class UsersController < ApplicationController
   end
 
   def reservations
-    date = Time.now
-    if date.friday?
-      date += 2.days
-    elsif date.saturday?
-      date += 1.days
-    end
-
     @rooms = Room.all
-    @reservations = Reservation.active_total.select('rooms.*, cast(rooms.name as integer) asc')
-                                            .joins(:room)
-                                            .where(:time => date.beginning_of_day..date.end_of_day)
-                                            .order('cast(rooms.name as integer) asc')
-                                            .uniq
-                                            .pluck(:time)
+    @reservations = Reservation.active_total.joins(:room)
   end
 
   def manage
