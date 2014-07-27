@@ -79,4 +79,6 @@ BmsomRoomsBootstrap::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   config.action_mailer.default_url_options = { host: 'bmsom-rooms.herokuapp.com' }
+
+  config.logger = Logger.new(STDOUT)
 end
