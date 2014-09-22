@@ -53,8 +53,7 @@ class UsersController < ApplicationController
         @user.password = 'bmsom123'
         @user.password_confirmation = 'bmsom123'
         @user.username = @user.email
-        #if @user.save
-        if @user.valid?
+        if @user.save
           added_users_id << @user.id.to_i
         else
           flash[:error] += t("multi_users.add_error") + ': ' +
@@ -78,8 +77,7 @@ class UsersController < ApplicationController
            @user.email = params[:data][str.to_s][:email]
 
           if @user.changed?
-            #if @user.save
-            if @user.valid?
+            if @user.save
               updated_users_success += 1
             else
               flash[:error] += t("multi_users.row") + ' ' + (str+1).to_s + ': ' + t("multi_users.details") +
@@ -110,25 +108,21 @@ class UsersController < ApplicationController
 
     users_for_removal = all_users - table_all_users_id - added_users_id + blank_users_id
 
-    #users_for_removal.each do |user|
-    #  User.find_by_id(user).destroy
-    #end
+    users_for_removal.each do |user|
+      User.find_by_id(user).destroy
+    end
 
+    if added_users_id.length > 0
+      flash[:notice] += added_users_id.length.to_s + ' ' + t("multi_users.plural") + ' ' + t("multi_users.added") + '<br />'
+    end
 
-    #if added_users_id.length > 0
-    #  flash[:notice] += added_users_id.length.to_s + ' ' + t("multi_users.plural") + ' ' + t("multi_users.added") + '<br />'
-    #end
+    if updated_users_success > 0
+      flash[:notice] += updated_users_success.to_s + ' ' + t("multi_users.plural") + ' ' + t("multi_users.updated") + '<br />'
+    end
 
-    #if updated_users_success > 0
-    #  flash[:notice] += updated_users_success.to_s + ' ' + t("multi_users.plural") + ' ' + t("multi_users.updated") + '<br />'
-    #end
-
-    #if users_for_removal.length > 0
-    #  flash[:notice] += users_for_removal.length.to_s + ' ' + t("multi_users.plural") + ' ' + t("multi_users.removed") + '<br />'
-    #end
-
-    flash[:notice] += "Removal source: " + all_users.to_s + " Users for remove:" + users_for_removal.to_s + " Users should be added:" + added_users_id.to_s + " Users should be added:" + blank_users_id.to_s + " All users:" + table_all_users_id.to_s
-
+    if users_for_removal.length > 0
+      flash[:notice] += users_for_removal.length.to_s + ' ' + t("multi_users.plural") + ' ' + t("multi_users.removed") + '<br />'
+    end
 
     redirect_to(:action => 'manage')
   end
