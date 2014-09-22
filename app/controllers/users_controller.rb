@@ -31,6 +31,7 @@ class UsersController < ApplicationController
     table_all_users_id = []
     added_users_id = []
     blank_users_id = []
+    all_users = []
     updated_users_success = 0
 
 
@@ -97,12 +98,17 @@ class UsersController < ApplicationController
       end
       else
         if User.find_by_id(params[:data][str.to_s][:id].to_i)
-          blank_users_id << params[:data][str.to_s][:id].to_i
+          blank_users_id << params[:data][str.to_s][:id].to_s
         end
       end
 
     end
-    users_for_removal = User.connection.select_values(User.select("id").to_sql) - table_all_users_id - added_users_id + blank_users_id
+
+    User.all.each do |user|
+      all_users << user.id
+    end
+
+    users_for_removal = all_users - table_all_users_id - added_users_id + blank_users_id
 
     #users_for_removal.each do |user|
     #  User.find_by_id(user).destroy
