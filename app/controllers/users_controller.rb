@@ -45,14 +45,15 @@ class UsersController < ApplicationController
           params[:data][str.to_s][:last_name].blank? && params[:data][str.to_s][:instrument].blank?)
         if(!User.find_by_id(params[:data][str.to_s][:id].to_i))
         @user = User.new
-        @user.email = params[:data][str.to_s][:email]
+        @user.email = params[:data][str.to_s][:email].strip
         @user.first_name = params[:data][str.to_s][:first_name]
         @user.last_name = params[:data][str.to_s][:last_name]
         @user.instrument = params[:data][str.to_s][:instrument]
         @user.password = 'bmsom123'
         @user.password_confirmation = 'bmsom123'
         @user.username = @user.email
-        if @user.save
+        #if @user.save
+        if @user.valid?
           added_users_id << @user.id
         else
           flash[:error] += t("multi_users.add_error") + ': ' +
@@ -76,7 +77,8 @@ class UsersController < ApplicationController
            @user.email = params[:data][str.to_s][:email]
 
           if @user.changed?
-            if @user.save
+            #if @user.save
+            if @user.valid?
               updated_users_success += 1
             else
               flash[:error] += t("multi_users.row") + ' ' + (str+1).to_s + ': ' + t("multi_users.details") +
@@ -102,21 +104,25 @@ class UsersController < ApplicationController
     end
     users_for_removal = User.connection.select_values(User.select("id").to_sql) - table_all_users_id - added_users_id + blank_users_id
 
-    users_for_removal.each do |user|
-      User.find_by_id(user).destroy
-    end
+    #users_for_removal.each do |user|
+    #  User.find_by_id(user).destroy
+    #end
 
-    if added_users_id.length > 0
-      flash[:notice] += added_users_id.length.to_s + ' ' + t("multi_users.plural") + ' ' + t("multi_users.added") + '<br />'
-    end
 
-    if updated_users_success > 0
-      flash[:notice] += updated_users_success.to_s + ' ' + t("multi_users.plural") + ' ' + t("multi_users.updated") + '<br />'
-    end
+    #if added_users_id.length > 0
+    #  flash[:notice] += added_users_id.length.to_s + ' ' + t("multi_users.plural") + ' ' + t("multi_users.added") + '<br />'
+    #end
 
-    if users_for_removal.length > 0
-      flash[:notice] += users_for_removal.length.to_s + ' ' + t("multi_users.plural") + ' ' + t("multi_users.removed") + '<br />'
-    end
+    #if updated_users_success > 0
+    #  flash[:notice] += updated_users_success.to_s + ' ' + t("multi_users.plural") + ' ' + t("multi_users.updated") + '<br />'
+    #end
+
+    #if users_for_removal.length > 0
+    #  flash[:notice] += users_for_removal.length.to_s + ' ' + t("multi_users.plural") + ' ' + t("multi_users.removed") + '<br />'
+    #end
+
+    flash[:notice] += "Users for remove:" + users_for_removal.to_s + " Users should be added:" + added_users_id.to_s + " Blank Users:" + blank_users_id.to_s
+
 
     redirect_to(:action => 'manage')
   end
