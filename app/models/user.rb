@@ -38,7 +38,7 @@ class User < ActiveRecord::Base
   end
 
   def instruments_from_list_only
-    instruments = ['Piano', 'Strings', 'Wind', 'Singing', 'Other']
+    instruments = ['Piano', 'Strings', 'Wind', 'Vocal', 'Other']
     unless instruments.include?(self.instrument)
       errors.add(:base,I18n.t("new_user.instrument_error"))
     end

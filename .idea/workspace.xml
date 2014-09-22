@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24262f03-3ce4-4e34-bbaa-2f6d4f539b47" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/manage.html.erb" afterPath="$PROJECT_DIR$/app/views/users/manage.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bmsom_rooms_bootstrap.iws" />
@@ -51,7 +52,7 @@
       <file leaf-file-name="manage.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/users/manage.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="143" selection-start="1959" selection-end="1959" vertical-scroll-proportion="-28.387096" vertical-offset="0" max-vertical-offset="3630">
+            <state line="31" column="33" selection-start="1396" selection-end="1396" vertical-scroll-proportion="-4.967742" vertical-offset="528" max-vertical-offset="3630">
               <folding />
             </state>
           </provider>
@@ -84,19 +85,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="0" selection-start="2226" selection-end="2226" vertical-scroll-proportion="0.596745" vertical-offset="1056" max-vertical-offset="4422">
+            <state line="63" column="0" selection-start="2226" selection-end="2226" vertical-scroll-proportion="0.0" vertical-offset="1056" max-vertical-offset="4422">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="user.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="41" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0" vertical-offset="11" max-vertical-offset="1144">
+            <state line="40" column="53" selection-start="1100" selection-end="1100" vertical-scroll-proportion="0.7359855" vertical-offset="473" max-vertical-offset="1144">
               <folding />
             </state>
           </provider>
@@ -195,9 +196,9 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/public.html.erb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
-        <option value="$PROJECT_DIR$/app/views/users/manage.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/views/users/manage.html.erb" />
       </list>
     </option>
   </component>
@@ -1338,23 +1339,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="41" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0" vertical-offset="11" max-vertical-offset="1144">
+        <state line="63" column="0" selection-start="2226" selection-end="2226" vertical-scroll-proportion="0.0" vertical-offset="1056" max-vertical-offset="4422">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/manage.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="143" selection-start="1959" selection-end="1959" vertical-scroll-proportion="-28.387096" vertical-offset="0" max-vertical-offset="3630">
+        <state line="31" column="33" selection-start="1396" selection-end="1396" vertical-scroll-proportion="-4.967742" vertical-offset="528" max-vertical-offset="3630">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="0" selection-start="2226" selection-end="2226" vertical-scroll-proportion="0.596745" vertical-offset="1056" max-vertical-offset="4422">
+        <state line="40" column="53" selection-start="1100" selection-end="1100" vertical-scroll-proportion="0.7359855" vertical-offset="473" max-vertical-offset="1144">
           <folding />
         </state>
       </provider>
