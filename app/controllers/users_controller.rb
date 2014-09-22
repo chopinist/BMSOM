@@ -121,7 +121,7 @@ class UsersController < ApplicationController
     #  flash[:notice] += users_for_removal.length.to_s + ' ' + t("multi_users.plural") + ' ' + t("multi_users.removed") + '<br />'
     #end
 
-    flash[:notice] += "Users for remove:" + users_for_removal.to_s + " Users should be added:" + added_users_id.to_s + " Blank Users:" + blank_users_id.to_s
+    flash[:notice] += "Users for remove:" + users_for_removal.to_s + " Users should be added:" + added_users_id.to_s + " Users should be added:" + blank_users_id.to_s + " All users:" + table_all_users_id.to_s
 
 
     redirect_to(:action => 'manage')
