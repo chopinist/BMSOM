@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="24262f03-3ce4-4e34-bbaa-2f6d4f539b47" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bmsom_rooms_bootstrap.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -86,7 +87,7 @@
       <file leaf-file-name="users_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="123" column="180" selection-start="4501" selection-end="4501" vertical-scroll-proportion="3.8092592" vertical-offset="649" max-vertical-offset="4422">
+            <state line="123" column="108" selection-start="4434" selection-end="4434" vertical-scroll-proportion="0.75555557" vertical-offset="2298" max-vertical-offset="4422">
               <folding />
             </state>
           </provider>
@@ -1353,7 +1354,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="180" selection-start="4501" selection-end="4501" vertical-scroll-proportion="3.8092592" vertical-offset="649" max-vertical-offset="4422">
+        <state line="123" column="108" selection-start="4434" selection-end="4434" vertical-scroll-proportion="0.75555557" vertical-offset="2298" max-vertical-offset="4422">
           <folding />
         </state>
       </provider>

@@ -54,7 +54,7 @@ class UsersController < ApplicationController
         @user.username = @user.email
         #if @user.save
         if @user.valid?
-          added_users_id << @user.id
+          added_users_id << @user.id.to_i
         else
           flash[:error] += t("multi_users.add_error") + ': ' +
               ' "' + @user.first_name.to_s + '" ' +
@@ -121,7 +121,7 @@ class UsersController < ApplicationController
     #  flash[:notice] += users_for_removal.length.to_s + ' ' + t("multi_users.plural") + ' ' + t("multi_users.removed") + '<br />'
     #end
 
-    flash[:notice] += "Users for remove:" + users_for_removal.to_s + " Users should be added:" + added_users_id.to_s + " Users should be added:" + blank_users_id.to_s + " All users:" + table_all_users_id.to_s
+    flash[:notice] += "Removal source: " + User.connection.select_values(User.select("id").to_sql).to_s + " Users for remove:" + users_for_removal.to_s + " Users should be added:" + added_users_id.to_s + " Users should be added:" + blank_users_id.to_s + " All users:" + table_all_users_id.to_s
 
 
     redirect_to(:action => 'manage')
