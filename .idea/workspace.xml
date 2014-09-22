@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24262f03-3ce4-4e34-bbaa-2f6d4f539b47" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/manage.html.erb" afterPath="$PROJECT_DIR$/app/views/users/manage.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reservations/new.html.erb" afterPath="$PROJECT_DIR$/app/views/reservations/new.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bmsom_rooms_bootstrap.iws" />
@@ -58,6 +57,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="new.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/reservations/new.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="61" selection-start="612" selection-end="612" vertical-scroll-proportion="0.6321839" vertical-offset="0" max-vertical-offset="704">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -94,10 +102,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="53" selection-start="1100" selection-end="1100" vertical-scroll-proportion="0.7359855" vertical-offset="473" max-vertical-offset="1144">
+            <state line="40" column="53" selection-start="1100" selection-end="1100" vertical-scroll-proportion="0.0" vertical-offset="473" max-vertical-offset="1144">
               <folding />
             </state>
           </provider>
@@ -107,15 +115,6 @@
         <entry file="file://$PROJECT_DIR$/app/views/users/reservations.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="10" column="30" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0" vertical-offset="220" max-vertical-offset="528">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20140725174353_heroku.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20140725174353_heroku.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="5" selection-start="1612" selection-end="1612" vertical-scroll-proportion="0.0" vertical-offset="701" max-vertical-offset="1254">
               <folding />
             </state>
           </provider>
@@ -148,7 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/rooms/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/update.js.erb" />
         <option value="$PROJECT_DIR$/app/views/users/create.js.erb" />
@@ -199,6 +197,7 @@
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/views/users/manage.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/reservations/new.html.erb" />
       </list>
     </option>
   </component>
@@ -1195,11 +1194,6 @@
         <state line="15" column="64" selection-start="714" selection-end="714" vertical-scroll-proportion="0.0" vertical-offset="127" max-vertical-offset="924" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/reservations/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="34" selection-start="956" selection-end="956" vertical-scroll-proportion="0.0" vertical-offset="145" max-vertical-offset="704" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/reservations.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1452" />
@@ -1346,6 +1340,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="53" selection-start="1100" selection-end="1100" vertical-scroll-proportion="0.0" vertical-offset="473" max-vertical-offset="1144">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/manage.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="33" selection-start="1396" selection-end="1396" vertical-scroll-proportion="-4.967742" vertical-offset="528" max-vertical-offset="3630">
@@ -1353,9 +1354,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/reservations/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="53" selection-start="1100" selection-end="1100" vertical-scroll-proportion="0.7359855" vertical-offset="473" max-vertical-offset="1144">
+        <state line="15" column="61" selection-start="612" selection-end="612" vertical-scroll-proportion="0.6321839" vertical-offset="0" max-vertical-offset="704">
           <folding />
         </state>
       </provider>
