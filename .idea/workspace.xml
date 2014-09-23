@@ -51,7 +51,7 @@
       <file leaf-file-name="new.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/reservations/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="551" selection-end="551" vertical-scroll-proportion="0.42914173" vertical-offset="115" max-vertical-offset="616">
+            <state line="16" column="0" selection-start="622" selection-end="622" vertical-scroll-proportion="0.4730539" vertical-offset="115" max-vertical-offset="660">
               <folding>
                 <element signature="e#303#406#0" expanded="true" />
               </folding>
@@ -1362,7 +1362,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/reservations/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="551" selection-end="551" vertical-scroll-proportion="0.42914173" vertical-offset="115" max-vertical-offset="616">
+        <state line="16" column="0" selection-start="622" selection-end="622" vertical-scroll-proportion="0.4730539" vertical-offset="115" max-vertical-offset="660">
           <folding>
             <element signature="e#303#406#0" expanded="true" />
           </folding>
