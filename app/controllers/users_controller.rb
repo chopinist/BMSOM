@@ -31,7 +31,6 @@ class UsersController < ApplicationController
     table_all_users_id = []
     added_users_id = []
     blank_users_id = []
-    all_users = []
     updated_users_success = 0
 
 
@@ -45,83 +44,82 @@ class UsersController < ApplicationController
       if !(params[:data][str.to_s][:email].blank? && params[:data][str.to_s][:first_name].blank? &&
           params[:data][str.to_s][:last_name].blank? && params[:data][str.to_s][:instrument].blank?)
         if(!User.find_by_id(params[:data][str.to_s][:id].to_i))
-        @user = User.new
-        @user.email = params[:data][str.to_s][:email].strip
-        @user.first_name = params[:data][str.to_s][:first_name]
-        @user.last_name = params[:data][str.to_s][:last_name]
-        @user.instrument = params[:data][str.to_s][:instrument]
-        @user.password = 'bmsom123'
-        @user.password_confirmation = 'bmsom123'
-        @user.username = @user.email
-        if @user.save
-          added_users_id << @user.id.to_i
-        else
-          flash[:error] += t("multi_users.add_error") + ': ' +
-              ' "' + @user.first_name.to_s + '" ' +
-              ' "' + @user.last_name.to_s + '" ' +
-              ' "' + @user.instrument.to_s + '" ' +
-              ' "' + @user.email.to_s + '" - '
+          @user = User.new
+          @user.email = params[:data][str.to_s][:email]
+          @user.first_name = params[:data][str.to_s][:first_name]
+          @user.last_name = params[:data][str.to_s][:last_name]
+          @user.instrument = params[:data][str.to_s][:instrument]
+          @user.password = 'bmsom123'
+          @user.password_confirmation = 'bmsom123'
+          @user.username = @user.email
+          if @user.save
+            added_users_id << @user.id
+          else
+            flash[:error] += t("multi_users.add_error") + ': ' +
+                ' "' + @user.first_name.to_s + '" ' +
+                ' "' + @user.last_name.to_s + '" ' +
+                ' "' + @user.instrument.to_s + '" ' +
+                ' "' + @user.email.to_s + '" - '
 
-          @user.errors.full_messages.each do |msg|
-            flash[:error] += msg + '; '
+            @user.errors.full_messages.each do |msg|
+              flash[:error] += msg + '; '
+            end
+            flash[:error] += '<br />'
           end
-          flash[:error] += '<br />'
-        end
-      else
-        @user = User.find_by_id(params[:data][str.to_s][:id].to_i)
+        else
+          @user = User.find_by_id(params[:data][str.to_s][:id].to_i)
 
-        if(@user)
-           @user.first_name = params[:data][str.to_s][:first_name]
-           @user.last_name = params[:data][str.to_s][:last_name]
-           @user.instrument = params[:data][str.to_s][:instrument]
-           @user.email = params[:data][str.to_s][:email]
+          if(@user)
+            @user.first_name = params[:data][str.to_s][:first_name]
+            @user.last_name = params[:data][str.to_s][:last_name]
+            @user.instrument = params[:data][str.to_s][:instrument]
+            @user.email = params[:data][str.to_s][:email]
 
-          if @user.changed?
-            if @user.save
-              updated_users_success += 1
-            else
-              flash[:error] += t("multi_users.row") + ' ' + (str+1).to_s + ': ' + t("multi_users.details") +
-                  ' "' + @user.first_name.to_s + '" ' +
-                  ' "' + @user.last_name.to_s + '" ' +
-                  ' "' + @user.instrument.to_s + '" ' +
-                  ' "' + @user.email.to_s + '" - '
+            if @user.changed?
+              if @user.save
+                updated_users_success += 1
+              else
+                flash[:error] += t("multi_users.row") + ' ' + (str+1).to_s + ': ' + t("multi_users.details") +
+                    ' "' + @user.first_name.to_s + '" ' +
+                    ' "' + @user.last_name.to_s + '" ' +
+                    ' "' + @user.instrument.to_s + '" ' +
+                    ' "' + @user.email.to_s + '" - '
 
-              @user.errors.full_messages.each do |msg|
-                flash[:error] += msg + '; '
+                @user.errors.full_messages.each do |msg|
+                  flash[:error] += msg + '; '
+                end
+                flash[:error] += '<br />'
               end
-              flash[:error] += '<br />'
             end
           end
         end
-      end
       else
         if User.find_by_id(params[:data][str.to_s][:id].to_i)
-          blank_users_id << params[:data][str.to_s][:id].to_s
+          blank_users_id << params[:data][str.to_s][:id].to_i
         end
       end
 
     end
-
-    User.all.each do |user|
-      all_users << user.id
-    end
-
-    users_for_removal = all_users - table_all_users_id - added_users_id + blank_users_id
+    users_for_removal = User.connection.select_values(User.select("id").to_sql) - table_all_users_id - added_users_id + b
+    lank_users_id
 
     users_for_removal.each do |user|
       User.find_by_id(user).destroy
     end
 
     if added_users_id.length > 0
-      flash[:notice] += added_users_id.length.to_s + ' ' + t("multi_users.plural") + ' ' + t("multi_users.added") + '<br />'
+      flash[:notice] += added_users_id.length.to_s + ' ' + t("multi_users.plural") + ' ' + t("multi_users.added") + '<br
+/>'
     end
 
     if updated_users_success > 0
-      flash[:notice] += updated_users_success.to_s + ' ' + t("multi_users.plural") + ' ' + t("multi_users.updated") + '<br />'
+      flash[:notice] += updated_users_success.to_s + ' ' + t("multi_users.plural") + ' ' + t("multi_users.updated") + '<b
+r />'
     end
 
     if users_for_removal.length > 0
-      flash[:notice] += users_for_removal.length.to_s + ' ' + t("multi_users.plural") + ' ' + t("multi_users.removed") + '<br />'
+      flash[:notice] += users_for_removal.length.to_s + ' ' + t("multi_users.plural") + ' ' + t("multi_users.removed") +
+          '<br />'
     end
 
     redirect_to(:action => 'manage')
@@ -168,28 +166,28 @@ class UsersController < ApplicationController
     @user.destroy
     respond_to do |format|
       format.js { @users = User.where("first_name LIKE ? OR last_name like ?",
-                                          "%#{params[:search]}%", "%#{params[:search]}%")
-                                          .paginate(:per_page => 10,:page => params[:page]) }
+                                      "%#{params[:search]}%", "%#{params[:search]}%")
+      .paginate(:per_page => 10,:page => params[:page]) }
       format.html { redirect_to(:action => 'index') }
     end
   end
 
   private
-    def safe_params
-      params.require(:user).permit(:id, :email, :first_name, :last_name, :admin, :instrument,
-                                   :username, :password, :password_confirmation)
-    end
+  def safe_params
+    params.require(:user).permit(:id, :email, :first_name, :last_name, :admin, :instrument,
+                                 :username, :password, :password_confirmation)
+  end
 
-    def set_user
-      @user = User.find_by_id(params[:id])
-      if !@user
-        redirect_to users_path
-      end
+  def set_user
+    @user = User.find_by_id(params[:id])
+    if !@user
+      redirect_to users_path
     end
+  end
 
-    def restrict_user_access_from_users
-      if !confirm_admin && params[:id] != (session[:user_id].to_s || cookies[:user_id]).to_s
-        redirect_to new_user_reservation_path(session[:user_id] || cookies[:user_id])
-      end
+  def restrict_user_access_from_users
+    if !confirm_admin && params[:id] != (session[:user_id].to_s || cookies[:user_id]).to_s
+      redirect_to new_user_reservation_path(session[:user_id] || cookies[:user_id])
     end
+  end
 end
