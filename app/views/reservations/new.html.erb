@@ -15,7 +15,9 @@
 
           <%= form_for ([@user, @reservation]), remote: true do |f| %>
 
-              <%= render(:partial => 'shared/notifications', locals: { f: f }) %>
+              <%= render(:partial => 'form_datetime', locals:{f:f}) %>
+              <%= render(:partial => 'shared/notifications', locals:{f:f}) %>
+              <%= render(:partial => 'form_rooms', locals:{f:f}) %>
 
           <% end %>
 

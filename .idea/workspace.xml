@@ -51,7 +51,7 @@
       <file leaf-file-name="new.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/reservations/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="622" selection-end="622" vertical-scroll-proportion="0.4730539" vertical-offset="115" max-vertical-offset="704">
+            <state line="19" column="58" selection-start="830" selection-end="830" vertical-scroll-proportion="0.6047904" vertical-offset="115" max-vertical-offset="748">
               <folding>
                 <element signature="e#303#406#0" expanded="true" />
               </folding>
@@ -1332,13 +1332,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/reservations/_form_datetime.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="553">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/reservations/_form_reservations.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="7" selection-start="1203" selection-end="1203" vertical-scroll-proportion="-19.161291" vertical-offset="0" max-vertical-offset="792">
@@ -1360,9 +1353,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/reservations/_form_datetime.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="553">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/reservations/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="622" selection-end="622" vertical-scroll-proportion="0.4730539" vertical-offset="115" max-vertical-offset="704">
+        <state line="19" column="58" selection-start="830" selection-end="830" vertical-scroll-proportion="0.6047904" vertical-offset="115" max-vertical-offset="748">
           <folding>
             <element signature="e#303#406#0" expanded="true" />
           </folding>
